@@ -1,0 +1,27 @@
+field,records,content,vivado,quartus,libero,openxc7
+vendor,(extraction only),Toolchain,set by the adapter,set by the adapter,set by the adapter,set by the adapter
+tool_version,TENV-1;TENV-3,Tool version,'Vivado vYYYY.N' in runme.log and the build log,'Quartus Prime Version' in flow.rpt,KEY CAPTURE in the .prjx,Yosys log banner; nextpnr-xilinx --version in build.log
+device,(extraction only),Device the build targets,Part in the .xpr,DEVICE assignment in the .qsf,KEY VendorTechnology_Die in the .prjx,--part_name in build.log
+sources,SIP-2;RPT-2,Design inputs and their digests,<File> entries of the design and IP file sets in the .xpr that are enabled and used in synthesis or implementation (IP .xci under ip); files the HDL reads; $readmem lines of the synthesis log,every design *_FILE assignment in the .qsf; user and auto-found files in 'Source Files Read' of map.rpt; files the HDL reads; Platform Designer .qsys files,hdl entries of the .prjx file list; SmartDesign netlists; @I and 'Opening data file' lines of the .srr; files the HDL reads,read_verilog arguments of synth.ys; files the HDL reads
+constraints,CFG-1;RPT-2,Constraint inputs and their digests,<File> entries of the constraint file set in the .xpr; files a Tcl constraint file loads with source,"SDC, SDC_ENTITY, and RTL_SDC files; pin and instance assignments of the .qsf","constraint files associated with synthesis, timing, or place and route in the .prjx (derived SDC excluded)",--xdc arguments in pnr.args
+ip,SIP-1,IP identity (VLNV) and configuration digest,.xci files; cells of block designs at every level,"modules of .qsys systems, nested systems included; megafunction parameter tables of map.rpt",core vault path and configuration in component/work/*/*.cxf; MSS .cfg,none (device primitives in the HDL)
+options_digest,CFG-2,Digest of the tool options,"<Option>, <Run>, and <Step> lines, Verilog defines, generics, and file properties of the .xpr; Tcl hooks and the files they load",global assignments of the .qsf; *_SCRIPT_FILE scripts and the files they load,tool parameters in tooldata/*_tools.xml; constraint-to-tool associations of the .prjx,read_verilog flags of synth.ys; pnr.args
+seed,CFG-2,Placement seed,none,SEED assignment in the .qsf,none,--seed in pnr.args
+license,TENV-2,Licensed features,'Got license for feature' in the logs,none (not recorded),'License checkout' in synthesis/synplify.log,none (no license)
+netlists,TRN-1,Synthesized netlist,*.runs/synth_1/*.dcp,db/*.map.cdb,synthesis/*.vm and *.srm,design.json
+transform_logs,TRN-1,Transformation logs,*.vds and *.vdi,map.rpt and fit.rpt,synthesis/*.srr,yosys.log and nextpnr.log
+checkpoints,TRN-2,Implementation database,*_routed.dcp,db/*.cmp.cdb,designer/*/*.adl,routed.json
+route_report,TRN-3,Placement and routing report,reports/utilization.rpt,fit.rpt,designer/*/*_compile_netlist_resources.rpt,report.json
+timing_report,RPT-1;CFG-3,Timing report,reports/timing_summary.rpt,sta.rpt,designer/*/*_max_timing_multi_corner.xml,report.json
+timing_met,CFG-3,Timing met,'All user specified timing constraints are met' in the timing summary,worst-case setup and hold slack of sta.rpt,max and min flags in designer/*/*_has_violations,every clock reaches its constrained frequency in report.json
+wns,CFG-3,Worst slack,WNS of the timing summary,worst-case setup slack of sta.rpt,minimum worst slack over the clock domains,derived from the clock frequencies
+bitstream,BSD-1;DEP-1,Programming file,*.bit,"*.jic, else *.sof",export/*.job,*.bit
+bitstream_sha256,BSD-1;DEP-1;RPT-2,Digest of the programming file,SHA-256 of the file,as Vivado,as Vivado,as Vivado
+config_sha256,BSD-1,"Configuration content, compared with a separate rebuild",.bit from the sync word (header with the build time left out),.jic whole (no timestamp),'Entire bitstream digest' in export/*.digest,.bit from the sync word
+timing_report_sha256,RPT-1,Digest of the timing report content,"without date, host, command, message, and machine-load lines",as Vivado; rows of equal slack compared as a set,as Vivado,as Vivado
+simulation,SIM-1;SIM-2,Simulation evidence,".wlf, .vcd, and .log files in simulation folders",as Vivado,as Vivado,as Vivado
+sim.files,SIM-1;SIM-2,Files the simulation compiled and their digests at simulation time (egaudit sim),'Analyzing Verilog file' lines of xvlog.log (Vivado simulator),command line of the vlog -l log (Questa FPGA Starter Edition),command line of the vlog -l log (QuestaSim Pro),dependency file written by iverilog -M (Icarus Verilog)
+sim.result,SIM-1;SIM-2,Result of the simulation run (egaudit sim),"testbench pass or fail line in xsim.log, or an ERROR line","testbench pass or fail line in the vsim -l log, or an ** Error line",as Quartus,testbench pass or fail line in the vvp output
+unaccounted,RPT-2,"Files that are neither an input, evidence, nor a tool byproduct, and unresolved file references",artifact rules of egaudit/egaudit/artifacts.py,as Vivado,as Vivado,as Vivado
+deploy.verify,DEP-1,Verification after programming (programming log),masked configuration readback,"configuration flash programmed from the .jic, verified by CRC",array verify and device digest check,"readback compared with the bitstream, user memory masked (UG470)"
+deploy.idcode,BSD-4,Identity of the programmed device (programming log),IDCODE,IDCODE,IDCODE and device serial number,IDCODE

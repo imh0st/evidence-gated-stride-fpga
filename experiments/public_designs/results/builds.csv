@@ -1,0 +1,5 @@
+design,board,exit_code,seconds
+zybo_hdmi,zybo,0,648.9
+c10lp_multiproc,c10lp,0,830.7
+discovery_ref,disco,0,964.3
+picosoc_zybo,zybo_open,0,54.4

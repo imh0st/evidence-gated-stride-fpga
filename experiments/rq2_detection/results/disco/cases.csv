@@ -1,0 +1,14 @@
+board,case,expected,egaudit_verdict,egaudit_detected,other_records_worse,vendor_flags,note
+disco,A1,CFG-1,VIOLATED,1,RPT-2,0,timing_met=True bitstream_changed=True
+disco,A2,CFG-2,VIOLATED,1,,0,timing_met=True bitstream_changed=True
+disco,A3,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True bitstream_changed=True
+disco,A4,RPT-1,VIOLATED,1,,,
+disco,A5,TENV-3,VIOLATED,1,,,
+disco,A6,BSD-1,VIOLATED,1,RPT-2,,
+disco,A7,BSD-4,VIOLATED,1,,,
+disco,A8,DEP-1,VIOLATED,1,,0,verify=PASS
+disco,A9,REL-1;BSD-3,MISSING;MISSING,1,,,
+disco,N1,,,,,0,
+disco,N2,,,,BSD-1;RPT-2,0,bitstream_file_identical=False
+disco,N3,,,,,0,
+disco,N4,,,,,0,files=2

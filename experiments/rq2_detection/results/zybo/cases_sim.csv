@@ -1,0 +1,2 @@
+board,case,expected,egaudit_verdict,egaudit_detected,other_records_worse,vendor_flags,note
+zybo,A18,SIM-1,VIOLATED,1,,0,simulator=xsim result=PASS changed_from_project_baseline=SIM-1;SIM-2

@@ -1,0 +1,17 @@
+{
+  "simulator": "xsim",
+  "version": null,
+  "files": {
+    "async_fifo.v": "34758d7b0b7771d8bf23dae727229bbb3cb7e32fa23a829a8873bab3bba63421",
+    "reset_sync.v": "5a4ed8513a8cb9af2edf8f7261e90e011d2eee2e1f5d167e5fe4424ec906dbef",
+    "cdc_ref_core.v": "0e79201b4e0e2e9a05581a155292e16a40b3915a48b08a3ed542c07e03b12249",
+    "tb_cdc_ref.v": "7f0955114f53e59b472d3d683982c887eb5619dd28bca94e9393530211462297"
+  },
+  "logs": {
+    "xvlog.log": "21c0aa31eae6dc4742e24e123876ac7ddabd3496cacb1d3c701ae09fea3635b2",
+    "xsim.log": "4e151d6ccfef4f8fef8992a6a734ee8f3dff0aeadc63b4f22ff50a83e88517d6"
+  },
+  "result": "PASS",
+  "pass_pattern": "\\bPASS\\b",
+  "fail_pattern": "\\bFAIL\\b"
+}

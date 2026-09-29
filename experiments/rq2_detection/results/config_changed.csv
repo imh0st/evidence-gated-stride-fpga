@@ -1,0 +1,17 @@
+board,case,configuration_changed
+zybo,A1,1
+zybo,A2,0
+zybo,A3,1
+zybo,N2,0
+c10lp,A1,0
+c10lp,A2,1
+c10lp,A3,1
+c10lp,N2,0
+disco,A1,1
+disco,A2,1
+disco,A3,1
+disco,N2,0
+zybo_open,A1,0
+zybo_open,A2,1
+zybo_open,A3,1
+zybo_open,N2,0

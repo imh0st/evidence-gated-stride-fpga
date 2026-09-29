@@ -1,0 +1,11 @@
+{
+  "tool": "Quartus Prime Programmer",
+  "device": "10CL025Y",
+  "idcode": "020F30DD",
+  "serial": null,
+  "verify": "PASS",
+  "verify_method": "configuration flash programmed and verified (CRC)",
+  "programming_file": "cdc_ref.jic",
+  "bitstream_sha256": "8f71884658befe946cf779cabe791ee783d7d68b1efd8db0d98b301b8d97bb76",
+  "operator": "board-operator"
+}

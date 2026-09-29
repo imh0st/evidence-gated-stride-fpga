@@ -1,0 +1,52 @@
+{
+  "design": "cdc_ref_zybo",
+  "approved": {
+    "sources": {
+      "async_fifo.v": "34758d7b0b7771d8bf23dae727229bbb3cb7e32fa23a829a8873bab3bba63421",
+      "cdc_ref_core.v": "0e79201b4e0e2e9a05581a155292e16a40b3915a48b08a3ed542c07e03b12249",
+      "clk_gen.v": "48a9de96f96a10b95099ebb9e619437178c92fc3a05d5768ca0091e3fab6f4f3",
+      "reset_sync.v": "5a4ed8513a8cb9af2edf8f7261e90e011d2eee2e1f5d167e5fe4424ec906dbef",
+      "board_top.v": "791be515a61dab326fa8bd4a375807bc8c230e4cb8448cc8a442908f089949cd"
+    },
+    "constraints": {
+      "pins.xdc": "1cc38e23b7d9210b4510e9ba2c7de9c4938ac2040ab8490ea5afd0559107fcab",
+      "sync.xdc": "ef4dd2d410ee622960b4b74b5a2c2bc4ab022c1e208ffd9d657b428b36913187",
+      "cdc.xdc": "85f993238d6dc01da2b9c9f59d1d700b3d871d3f3e0a7366b197d96b3ab1efda"
+    },
+    "ip": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "sha256": "d623649357a6088530ecacd494001e3268a3b6e12c627488a9a4bc9939d20fc4",
+        "provider": "fpga-vendor"
+      }
+    },
+    "options_digest": "174d948378b3b8a487e061f7b8051638b70c7c235d0c4af591b1d951420b31ac",
+    "reviewer": "design-reviewer"
+  },
+  "tool": {
+    "vendor": "AMD Vivado",
+    "version": "v2025.2"
+  },
+  "reports": {
+    "timing": "bcf4a7cda41cbdaaacc746b5927a4621ed5d20c7436275967d92d47c12978875"
+  },
+  "bitstream": {
+    "file": "cdc_ref.bit",
+    "sha256": "ff8d96e0ad4e6ebbe14ab6cd0f5463790145b8b83f59646ebeca742f5c32e4a0"
+  },
+  "signature": {
+    "signer": "release-signer",
+    "approved_by": "release-approver"
+  },
+  "release": {
+    "id": "cdc_ref_zybo",
+    "approver": "release-approver",
+    "workflow": "experiments/rq1_end_to_end/run.py",
+    "service_account": "svc-release"
+  },
+  "target": {
+    "device": "xc7z020clg400-1",
+    "idcode": "23727093",
+    "serial": null
+  }
+}

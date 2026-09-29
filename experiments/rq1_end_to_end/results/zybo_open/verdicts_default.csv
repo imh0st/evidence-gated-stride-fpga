@@ -1,0 +1,25 @@
+record,verdict,reason
+SIP-1,SATISFIED,no third-party IP core in the build
+SIP-2,PARTIAL,source digests observed; no approved digests in a release manifest
+SIP-3,PROJECT,source access log requires an organizational record
+SIM-1,MISSING,no simulation evidence in the build or manifest
+SIM-2,MISSING,no simulation evidence in the build or manifest
+CFG-1,PARTIAL,constraint digests observed; no approved digests in a release manifest
+CFG-2,PARTIAL,tool-option digest observed; not recorded in a release manifest
+CFG-3,SATISFIED,timing goals met (worst slack 6.577 ns)
+TENV-1,PARTIAL,tool version observed; installation digest requires an organizational record
+TENV-2,PROJECT,license state not logged by this tool; requires an organizational record
+TENV-3,PARTIAL,tool version observed; not recorded in a release manifest
+TRN-1,SATISFIED,synthesized netlist and transformation log present
+TRN-2,SATISFIED,implementation database present
+TRN-3,SATISFIED,placement and routing report present
+RPT-1,PARTIAL,timing report present; digest not recorded at signoff
+RPT-2,PROJECT,source-to-bitstream lineage requires a release attestation
+RPT-3,PROJECT,report access log requires an organizational record
+BSD-1,PARTIAL,bitstream present; not bound to a release manifest
+BSD-2,PROJECT,key-handling record requires an organizational record
+BSD-3,PROJECT,signing authority requires a release manifest
+BSD-4,PARTIAL,programmed xc7z020 (23727093); no authorized target in manifest
+DEP-1,SATISFIED,"device verification passed (configuration readback compared with the bitstream, user memory masked)"
+REL-1,PROJECT,release manifest not supplied
+REL-2,PROJECT,release pipeline identity not supplied

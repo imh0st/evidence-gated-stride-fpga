@@ -1,0 +1,18 @@
+attack,nsa_jfac_td,slsa_threat,records,coverage,case,egaudit_detected_flows,records_match_rq2
+Constraint manipulation through the CAD flow,TD 3,D,CFG-1,detected,A1,4/4,1
+Tool option or seed changed after review,TD 3,D,CFG-2,detected,A2,4/4,1
+Trojan inserted into reviewed HDL,TD 3,B; D,SIP-2,detected,A3,4/4,1
+Signoff report manipulation,--,,RPT-1,detected,A4,4/4,1
+Tool version misreported in the release manifest,--,E,TENV-3,detected,A5,4/4,1
+Bitstream substitution or modification,TD 3; TD 4; TD 6,F,BSD-1,detected,A6,4/4,1
+Programming a device other than the authorized one (part type),--,,BSD-4,detected,A7,4/4,1
+Deploying a non-released configuration,TD 6,H,DEP-1,detected,A8,4/4,1
+Release or signing without authorization,TD 3; TD 4,E; F,REL-1;BSD-3,detected,A9,4/4,1
+Encrypted-IP confidentiality and integrity attack (IEEE 1735),TD 5,Dep. (integrity),SIP-1;SIP-3,described,,,1
+Trojan inserted by a malicious HLS tool,TD 7,Dep.,SIP-2;TENV-1,described,,,1
+Malicious or substituted EDA/CAD toolchain component,TD 7; TD 10,Dep.,TENV-1,described,,,1
+Malicious place-and-route and programming tools leaving no input change,TD 7,Dep.,TRN-2;BSD-1,described,,,1
+Trojan inserted by synthesis (Malicious LUT),TD 7,Dep.,BSD-1,detected,A17,3/3,1
+Testbench modified to reduce coverage or hide Trojan code,TD 3,B; D,SIM-1,detected,A18,4/4,1
+Fault injection through partial reconfiguration,TD 1,,,scope extension,,,1
+"Side-channel leakage, fault injection, or bitstream decryption on the device",TD 1,,,out of scope,,,1

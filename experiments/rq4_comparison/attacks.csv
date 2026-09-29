@@ -1,0 +1,18 @@
+attack,sources,nsa_jfac_td,slsa_threat,records,coverage,case
+Constraint manipulation through the CAD flow,Sunkavilli et al. 2021 (Analysis of attack surfaces); Sunkavilli et al. 2021 (New security threats on FPGAs),TD 3,D,CFG-1,detected,A1
+Tool option or seed changed after review,NSA/JFAC 2024 (FPGA Level of Assurance 1),TD 3,D,CFG-2,detected,A2
+Trojan inserted into reviewed HDL,NSA/JFAC 2024 (FPGA Level of Assurance 1); Proulx et al. 2023,TD 3,B; D,SIP-2,detected,A3
+Signoff report manipulation,derived from TD 3,--,,RPT-1,detected,A4
+Tool version misreported in the release manifest,derived from TD 3,--,E,TENV-3,detected,A5
+Bitstream substitution or modification,Chakraborty et al. 2013; Duncan et al. 2019; Puschner et al. 2024,TD 3; TD 4; TD 6,F,BSD-1,detected,A6
+Programming a device other than the authorized one (part type),NSA 2025 (FPGA Security Guidance),--,,BSD-4,detected,A7
+Deploying a non-released configuration,NSA/JFAC 2024 (FPGA Level of Assurance 1); Duncan et al. 2019,TD 6,H,DEP-1,detected,A8
+Release or signing without authorization,NSA 2025 (FPGA Security Guidance); SLSA 2025 (v1.2),TD 3; TD 4,E; F,REL-1;BSD-3,detected,A9
+Encrypted-IP confidentiality and integrity attack (IEEE 1735),Chhotaray et al. 2017; Speith et al. 2022,TD 5,Dep. (integrity),SIP-1;SIP-3,described,
+Trojan inserted by a malicious HLS tool,Pilato et al. 2019,TD 7,Dep.,SIP-2;TENV-1,described,
+Malicious or substituted EDA/CAD toolchain component,Basu et al. 2019; Krieg et al. 2016,TD 7; TD 10,Dep.,TENV-1,described,
+Malicious place-and-route and programming tools leaving no input change,Ahmed et al. 2021,TD 7,Dep.,TRN-2;BSD-1,described,
+Trojan inserted by synthesis (Malicious LUT),Krieg et al. 2016,TD 7,Dep.,BSD-1,detected,A17
+Testbench modified to reduce coverage or hide Trojan code,NSA/JFAC 2024 (FPGA Level of Assurance 1; TD 3.2),TD 3,B; D,SIM-1,detected,A18
+Fault injection through partial reconfiguration,Chaudhuri et al. 2024,TD 1,,,scope extension,
+"Side-channel leakage, fault injection, or bitstream decryption on the device",Proulx et al. 2023; Ender et al. 2020,TD 1,,,out of scope,

@@ -1,0 +1,141 @@
+{
+  "design": "MPFS_DISCOVERY",
+  "approved": {
+    "sources": {
+      "hdl/apb_arbiter.v": "869bb969b22f804f963fdc8e1b7c04db1a2db348a4e656a3cb6f2571d48be909",
+      "hdl/APB_PASS_THROUGH.v": "d4db4548a7837239d75cdce3f477d8acc85fa1ca594cb2aae4fac49e91b4de3b",
+      "smartdesign/CLOCKS_AND_RESETS": "76f6e66e77370d1a3628c437139721cf5351643957ac7ea1fa7494c15c39e751",
+      "smartdesign/CORE_I2C_C0_0_WRAPPER": "e4fc5381a96209fd35b7b01dd2801bd5872ea85ea75abbce853c62c539e08cd8",
+      "smartdesign/FIC_0_PERIPHERALS": "23405ea445b54c9c0e29fb9da8571ab215aafabe3290130acd618d981ed04e08",
+      "smartdesign/FIC_3_ADDRESS_GENERATION": "c49fad81801482097b22ec49d30b72e0015be99363a75d368741f4f1a4f930a7",
+      "smartdesign/FIC_3_PERIPHERALS": "65a6298e6afd4f22fa53abd2201ed32d143aef3533009c96ed7cebdc77d40733",
+      "smartdesign/MPFS_DISCOVERY_KIT": "9571f6d949f8c7d96747447efe38e0488a4bf757fd6162e16510f28ec60163df",
+      "smartdesign/MSS_WRAPPER": "6013e556b25972b47d26bbcc75996f08074af1257cb78a98199ef7667fe6baee"
+    },
+    "constraints": {
+      "MPFS_DISCOVERY_KIT_BANK_SETTINGS.pdc": "c0d02227d42fab529c61c012576c2dce78809022cdf620346b59494a12787063",
+      "MPFS_DISCOVERY_KIT_BOARD_MISC.pdc": "047804f4c16afb4a79adf3cca383e3ee9648d130a7ddb0bafb272434115bb23e",
+      "MPFS_DISCOVERY_MAC.pdc": "44af8d7c5e9cde56d4a4f6e8cfc8ec15a08486615c23b63c0fceba1f24bb7050",
+      "MPFS_DISCOVERY_mikroBUS.pdc": "1a95c1ccbc194ce4b077f8bb5a96ecaf41d23c11448f086a87da9a372008655f",
+      "MPFS_DISCOVERY_RPi.pdc": "1043d38df650f0237e7aaae3e3465d9fe04e4a5e5704ed60f5d7e802a7421d8f",
+      "MPFS_DISCOVERY_UARTS.pdc": "e7a68aa2b86c1616fd1058d476862e023060955f878ff88abddabff5c56826db",
+      "MPFS_DISCOVERY_7_SEG.pdc": "ad16d4801eccf671fb3ac8bf6462a6f21a9955a9e24b1de4e71044fa6f4bae22",
+      "SW_PLL.pdc": "945a660de63f1930f7352ca40bd44a4955e9b7a5d07a24ce5039edd9d6740444"
+    },
+    "ip": {
+      "COREI2C_C0": {
+        "vlnv": "Actel:DirectCore:COREI2C:7.2.101",
+        "sha256": "45993a4750bcd0a298fb13061e9f35f2ebc5f438b804c6b79aeb98bf20e6acc7",
+        "provider": "fpga-vendor"
+      },
+      "corepwm_C0": {
+        "vlnv": "Actel:DirectCore:corepwm:4.5.100",
+        "sha256": "20fed7c1b858f503679c48017696816b6eee45e7a5d933a0c9fac4f6e126e9d5",
+        "provider": "fpga-vendor"
+      },
+      "CORERESET": {
+        "vlnv": "Actel:DirectCore:CORERESET_PF:2.3.100",
+        "sha256": "005723462ff930c4fc336f7cc2c1c46ef590c4082ab98b9f7ec550b410fe40fa",
+        "provider": "fpga-vendor"
+      },
+      "CoreUARTapb_C0": {
+        "vlnv": "Actel:DirectCore:CoreUARTapb:5.7.100",
+        "sha256": "bafd9b5b3001a0c177f65e1bc9529c1a0967abbdbede3536a5f13b1f689faeab",
+        "provider": "fpga-vendor"
+      },
+      "DMA_CONTROLLER": {
+        "vlnv": "Actel:DirectCore:COREAXI4DMACONTROLLER:2.2.107",
+        "sha256": "fa72424a9e9594c8c6d675ea4dd6405816228f1e5759166efd53cba6c3da4fcd",
+        "provider": "fpga-vendor"
+      },
+      "DMA_INITIATOR": {
+        "vlnv": "Actel:DirectCore:COREAXI4INTERCONNECT:2.9.100",
+        "sha256": "48302997503687dba0a56adbfd76fc0b72132b4d5fe35f6690629bb3062ebd3e",
+        "provider": "fpga-vendor"
+      },
+      "FIC0_INITIATOR": {
+        "vlnv": "Actel:DirectCore:COREAXI4INTERCONNECT:2.9.100",
+        "sha256": "823098ceff91eb1e632d7bb38a0edd7ee6a5b07b607904c98d0bb94d7506e0b2",
+        "provider": "fpga-vendor"
+      },
+      "FIC_3_0x4000_0xxx": {
+        "vlnv": "Actel:DirectCore:CoreAPB3:4.2.100",
+        "sha256": "2511fd8e7f12132117e99d45b0c2a2f4815939bdb702f43b771f91f929f99f62",
+        "provider": "fpga-vendor"
+      },
+      "FIC_3_0x4xxx_xxxx": {
+        "vlnv": "Actel:DirectCore:CoreAPB3:4.2.100",
+        "sha256": "9738455e40f46421d1ee2cbc8933f0ab34a84512a133893afe93c4310b6f8a7c",
+        "provider": "fpga-vendor"
+      },
+      "GPIO": {
+        "vlnv": "Actel:DirectCore:CoreGPIO:3.2.102",
+        "sha256": "13f155adcc18310db90a250e77a8205c10c17fc8399cafafdb5fdc36009f1d83",
+        "provider": "fpga-vendor"
+      },
+      "INIT_MONITOR": {
+        "vlnv": "Microsemi:SgCore:PFSOC_INIT_MONITOR:1.0.309",
+        "sha256": "1aaafbf8609c3df5999aaac00a7ef1109231ba40c15996d7877791d0fa91843c",
+        "provider": "fpga-vendor"
+      },
+      "MIV_IHC_C0": {
+        "vlnv": "Microchip:MiV:MIV_IHC:2.0.100",
+        "sha256": "0df09f1734175b65062e3f108111a59481a57d1c17628a2e64486544380f1f96",
+        "provider": "fpga-vendor"
+      },
+      "MPFS_DISCOVERY_KIT_MSS": {
+        "vlnv": "Microchip:MSS:PFSOC_MSS",
+        "sha256": "873556a6cfb9009c3f492b98cf2b4c1d5a125cc23397c7cc8a22df82136ce19c",
+        "provider": "fpga-vendor"
+      },
+      "MSS_LSRAM": {
+        "vlnv": "Actel:DirectCore:COREAXI4SRAM:3.0.102",
+        "sha256": "f83109ad046b4b0a9be21297aafff6d9e574d8af3f0b4ceffcbacc1761791b78",
+        "provider": "fpga-vendor"
+      },
+      "PF_CCC_C0": {
+        "vlnv": "Actel:SgCore:PF_CCC:2.2.222",
+        "sha256": "6e9a694f38e3401f907cb4b3db0ce5abbec26194481d4b4125c11eee21a9676e",
+        "provider": "fpga-vendor"
+      },
+      "RECONFIGURATION_INTERFACE": {
+        "vlnv": "Actel:SgCore:PF_DRI:1.1.104",
+        "sha256": "ef6a2f3079c7d73d0b654c8c7b84301f7245cd08bfc780d5b3603667410770f5",
+        "provider": "fpga-vendor"
+      },
+      "SPI_FOR_7_SEG": {
+        "vlnv": "Actel:DirectCore:CORESPI:5.2.104",
+        "sha256": "721cada82adfaec92d187747f20bbf642425f5e9a5d32528dce407950020c74f",
+        "provider": "fpga-vendor"
+      }
+    },
+    "options_digest": "7beb21f74507b97bc5d7a807b203f06f2b3868771c20cac66669682e658e1cc4",
+    "reviewer": "design-reviewer"
+  },
+  "tool": {
+    "vendor": "Microchip Libero SoC",
+    "version": "2025.2.0.14"
+  },
+  "reports": {
+    "timing": "e77e79f7ef1cca639afa0412312ab4b5fff5fa2f12c6c3427a3809b657bc5c6b"
+  },
+  "bitstream": {
+    "file": "export/MPFS_DISCOVERY.job",
+    "sha256": "02904c6c690e1a17c0cef237a77a903d233e795f16f4d3fd7f214ec24eabb7f7"
+  },
+  "signature": {
+    "signer": "release-signer",
+    "approved_by": "release-approver"
+  },
+  "release": {
+    "id": "discovery_ref",
+    "approver": "release-approver",
+    "workflow": "experiments/public_designs/run.py",
+    "service_account": "svc-release"
+  },
+  "target": {
+    "device": "PA5SOC095T",
+    "idcode": "0f8181cf",
+    "serial": "6646180cba578c73b3eb984f201a9204"
+  }
+}

@@ -1,0 +1,5 @@
+board,case,expected,egaudit_verdict,egaudit_detected,other_records_worse,vendor_flags,note
+disco,A10,SIP-1,VIOLATED,1,,0,
+disco,A11,CFG-3,VIOLATED,1,CFG-1;RPT-2,1,timing_met=False
+disco,A12,TRN-1;TRN-2;TRN-3,MISSING;MISSING;MISSING,1,,,deleted=4
+disco,A13,REL-2,MISSING,1,RPT-2,,

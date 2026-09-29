@@ -1,0 +1,9 @@
+build,files,bytes,hdl_sources,ip_cores,vendor_build_s,egaudit_mean_s,egaudit_sd_s,overhead_pct
+cdc_ref/zybo,81,11235165,5,1,167.7,0.034,0.003,0.02
+cdc_ref/c10lp,107,22653367,5,1,32.8,0.123,0.004,0.375
+cdc_ref/disco,257,30854579,5,1,204.2,0.058,0.002,0.028
+cdc_ref/zybo_open,12,24215833,5,0,6.8,0.014,0.001,0.202
+zybo_hdmi/zybo,1322,263529969,3,27,648.9,0.369,0.048,0.057
+c10lp_multiproc/c10lp,481,114359564,99,30,830.7,0.325,0.023,0.039
+discovery_ref/disco,889,160263482,9,17,964.3,0.317,0.029,0.033
+picosoc_zybo/zybo_open,11,50695488,6,0,54.4,0.03,0.003,0.055

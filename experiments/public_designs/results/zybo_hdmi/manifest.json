@@ -1,0 +1,178 @@
+{
+  "design": "zybo_hdmi",
+  "approved": {
+    "sources": {
+      "archive_project_summary.txt": "95cc0b30a0420f5c3ff83cf7eb28438fef57d47179a6b64ecacd98245c5b71c7",
+      "design_1.bd": "0133a075fc1f6156e37a9086aeae091924332e82b5c2a7437d4495c1ae49573a",
+      "design_1_wrapper.v": "b160d8c91c3ba4bd71722d6daafb0ba1f3ca318e7c1b3f99c366721bd9d2469c"
+    },
+    "constraints": {
+      "Zybo-Z7-Master.xdc": "938b467e73a47163855bde13058ac17563b04b6060f276246761218963ede7bd"
+    },
+    "ip": {
+      "design_1/axi_dynclk_0": {
+        "vlnv": "digilentinc.com:ip:axi_dynclk:1.1",
+        "sha256": "9f2b62b33b3288c4639d265c02be0cbe9b168fe5131e82ef5d6741a48c6b8506",
+        "provider": "fpga-vendor"
+      },
+      "design_1/dvi2rgb_0": {
+        "vlnv": "digilentinc.com:ip:dvi2rgb:2.0",
+        "sha256": "97986a03236f978037ca9e69fad72ee83cb1d92e0d1fbf92dc3cf7c75ad0f4a4",
+        "provider": "fpga-vendor"
+      },
+      "design_1/proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "sha256": "d0421ccac967f1e4deefb531cd4352f3bb818409ccb1312606f387f2f858748b",
+        "provider": "fpga-vendor"
+      },
+      "design_1/proc_sys_reset_fclk0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "sha256": "86614a36bd3ca1f024d83439725088c7d8c9fc72c0ba20b5345f6aee4637679f",
+        "provider": "fpga-vendor"
+      },
+      "design_1/proc_sys_reset_fclk1": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "sha256": "497fed72f4a3083b13d6c8999df9e8c9a855988b217eb1aa08a78f36299708fb",
+        "provider": "fpga-vendor"
+      },
+      "design_1/processing_system7_0": {
+        "vlnv": "xilinx.com:ip:processing_system7:5.5",
+        "sha256": "00d729e4870f2dfd477dbe8c6e9f05f1d627cf74bd8788ffe8c4456681d34493",
+        "provider": "fpga-vendor"
+      },
+      "design_1/rgb2dvi_1": {
+        "vlnv": "digilentinc.com:ip:rgb2dvi:1.4",
+        "sha256": "73629ec92ee6b9e42e55b6cf473fad17b907ccc5b9d2f5ec2cf09e60fd01808e",
+        "provider": "fpga-vendor"
+      },
+      "design_1/xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "sha256": "f495ea2de1780c308a9d896ca47afe9b3d8b8b8df4c99e4b64fd99fa3f9ff598",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axi_gpio_video": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "sha256": "9b5e04e7cddcdfcbf6e489aa4bdc33321454621a6e38958159bf7acd4220ae37",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axi_interconnect_gp0": {
+        "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
+        "sha256": "1ddbd9ba67a31d654a2049416eef53006c718d15e9fd0e3de9863732659a36d5",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axi_interconnect_gp0/xbar": {
+        "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
+        "sha256": "18d4a0ee8ad21fa268ea106bcb0a01a93be7f0d8381ef1f5e1013e89140f0c87",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axi_interconnect_gp0/s00_couplers/auto_pc": {
+        "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
+        "sha256": "5c378dfe47793d0e8b287885a0e5065be035804229ecba8506a1fb600b9c9a4c",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axi_interconnect_hp0": {
+        "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
+        "sha256": "ea6a6d4cb88a7d968b6d91bd7dd5604efba6f4eeb2066a0ba8443c2eb73286d9",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axi_interconnect_hp0/xbar": {
+        "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
+        "sha256": "d6149ef4ebbb113d4235dbda484eece581deec7745a024764eb1e6c750f2db39",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axi_interconnect_hp0/s00_couplers/s00_regslice": {
+        "vlnv": "xilinx.com:ip:axi_register_slice:2.1",
+        "sha256": "cd394ff5e276fd30841ac67be57dff61b3871da06ffb04d7424c84c448828dd2",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axi_interconnect_hp0/s00_couplers/auto_pc": {
+        "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
+        "sha256": "844bd653a577a6349412929b366a1aa8823cdc8bf3ccb4ea14bbc64f0c928d49",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axi_interconnect_hp0/s01_couplers/s01_regslice": {
+        "vlnv": "xilinx.com:ip:axi_register_slice:2.1",
+        "sha256": "0aeba50697a7f1f473ec353916c7b914f6db2097741069cf054e9831382d521d",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axi_interconnect_hp0/s01_couplers/auto_pc": {
+        "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
+        "sha256": "a7b1c0bd7fb9f913741f7c97408653d87eefa065d58b4c26477beeda764ad8a5",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axi_interconnect_hp0/m00_couplers/m00_regslice": {
+        "vlnv": "xilinx.com:ip:axi_register_slice:2.1",
+        "sha256": "b2790d12f1d394b8c21f6e15248ad7ab9dbd1c6087530d875c9bb6fae1d7ca1c",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axi_vdma_0": {
+        "vlnv": "xilinx.com:ip:axi_vdma:6.3",
+        "sha256": "6b8e60a3cb92482e936f7db7e4385614b8fbde8898e347d0f422f45293db2dc6",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axis_subset_converter_in": {
+        "vlnv": "xilinx.com:ip:axis_subset_converter:1.1",
+        "sha256": "c324a4b7b0fcedb07dbe76d1e916478f1a0c8aa36ca744246f34e3c108d79d18",
+        "provider": "fpga-vendor"
+      },
+      "design_1/axis_subset_converter_out": {
+        "vlnv": "xilinx.com:ip:axis_subset_converter:1.1",
+        "sha256": "fbda126b6a8a3602f0430938e0dd1c31740b3f7b2aa66f113a0738c06329d3f1",
+        "provider": "fpga-vendor"
+      },
+      "design_1/subset_converter_reset": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "sha256": "e7505cf1a0ed835aca57a33de9924ecf8876609ba4333537e8532b13760868b8",
+        "provider": "fpga-vendor"
+      },
+      "design_1/v_axi4s_vid_out_0": {
+        "vlnv": "xilinx.com:ip:v_axi4s_vid_out:4.0",
+        "sha256": "d683b45dd0749d36002567dee912c995cee935366cf89d81e462f99c4acef741",
+        "provider": "fpga-vendor"
+      },
+      "design_1/v_tc_in": {
+        "vlnv": "xilinx.com:ip:v_tc:6.2",
+        "sha256": "d1eda0e5a41f1af0295ca7520a8b3c6fc5155605ec73af8c4c1f98f5ef395e1a",
+        "provider": "fpga-vendor"
+      },
+      "design_1/v_tc_out": {
+        "vlnv": "xilinx.com:ip:v_tc:6.2",
+        "sha256": "1134248c9339dcc205379ba300383abf533d8ef8534b55c4bd35af0e86e79405",
+        "provider": "fpga-vendor"
+      },
+      "design_1/v_vid_in_axi4s_0": {
+        "vlnv": "xilinx.com:ip:v_vid_in_axi4s:5.0",
+        "sha256": "b5a09549414e1310bfc0ff93187456dae46890ce48e3183cee0c03a33a770f7f",
+        "provider": "fpga-vendor"
+      }
+    },
+    "options_digest": "e58a042d0fae9c554071dbc084d6834c73ad79ef50d1e8058be5e554334ebf3e",
+    "reviewer": "design-reviewer"
+  },
+  "tool": {
+    "vendor": "AMD Vivado",
+    "version": "v2025.2"
+  },
+  "reports": {
+    "timing": "1e3a319c106e7311f02acabfb51a65308d34361aa3a44821cb5fbf30f2a49e2c"
+  },
+  "bitstream": {
+    "file": "zybo-20-hw.runs/impl_1/design_1_wrapper.bit",
+    "sha256": "702507a90e9f5e8e1076d81c43d17176a41809d1f48d3f45b60f9bb454017312"
+  },
+  "signature": {
+    "signer": "release-signer",
+    "approved_by": "release-approver"
+  },
+  "release": {
+    "id": "zybo_hdmi",
+    "approver": "release-approver",
+    "workflow": "experiments/public_designs/run.py",
+    "service_account": "svc-release"
+  },
+  "target": {
+    "device": "xc7z020clg400-1",
+    "idcode": "23727093",
+    "serial": null
+  }
+}

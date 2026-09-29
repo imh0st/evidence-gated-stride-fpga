@@ -1,0 +1,6 @@
+id,capability,example,in_toto_scenario,nsa_jfac_td,records
+C1,Change approved inputs,"Add or change a constraint, such as set_false_path; edit HDL or a testbench; change a tool option or seed",(i),3,SIP-2;SIM-1;CFG-1;CFG-2;CFG-3;TRN-3
+C2,Supply a false or substituted component,Malicious or modified IP core; malicious or substituted EDA/CAD tool,(i); (ii),3; 5; 7; 10,SIP-1;SIP-2;TENV-1
+C3,Change or remove tool outputs or evidence,Edit a netlist between tool steps; modify configuration data after generation; edit a timing report; misreport the tool version; delete an implementation database,(i); (ii),3,SIM-1;SIM-2;TENV-2;TENV-3;TRN-1;TRN-2;RPT-1;RPT-2;BSD-1;BSD-4;DEP-1
+C4,"Misuse release, signing, or programming authority",Replace the configuration data at release; release without approval; load an unauthorized configuration file; program another device,(i); (iii); (iv),3; 4; 6,RPT-2;BSD-1;BSD-3;BSD-4;REL-1;REL-2
+C5,Read or export protected artifacts,"Copy HDL, reports, or bitstreams from build storage or a release bundle; recover protected third-party IP; steal or compromise keys during provisioning",,4,SIP-3;SIM-2;RPT-3;BSD-2;DEP-1

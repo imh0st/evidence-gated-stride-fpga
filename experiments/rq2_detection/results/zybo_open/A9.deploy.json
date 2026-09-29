@@ -1,0 +1,11 @@
+{
+  "tool": "Vivado Hardware Manager",
+  "device": "xc7z020",
+  "idcode": "23727093",
+  "serial": null,
+  "verify": "PASS",
+  "verify_method": "configuration readback compared with the bitstream, user memory masked",
+  "programming_file": "cdc_ref.bit",
+  "bitstream_sha256": "977db62c21f80525ad20a6691948ef3d5f7d1a527d45aaedc027a7f6bab70e02",
+  "operator": "board-operator"
+}

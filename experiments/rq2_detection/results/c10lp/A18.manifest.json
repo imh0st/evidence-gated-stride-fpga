@@ -1,0 +1,65 @@
+{
+  "design": "cdc_ref_c10lp",
+  "approved": {
+    "sources": {
+      "async_fifo.v": "34758d7b0b7771d8bf23dae727229bbb3cb7e32fa23a829a8873bab3bba63421",
+      "board_top.v": "791be515a61dab326fa8bd4a375807bc8c230e4cb8448cc8a442908f089949cd",
+      "cdc_ref_core.v": "0e79201b4e0e2e9a05581a155292e16a40b3915a48b08a3ed542c07e03b12249",
+      "reset_sync.v": "5a4ed8513a8cb9af2edf8f7261e90e011d2eee2e1f5d167e5fe4424ec906dbef",
+      "clk_gen.v": "b4b1be169987be5b1e58e8eb7a7c332fc0057445be8ce233193aa6eef83e859f"
+    },
+    "constraints": {
+      "clocks.sdc": "308e3fe9b7294b13c379fca3e1fa0fbe5546062b94d554edd1e591798967f0e7",
+      "cdc.sdc": "c010cac7d701d92fe1e180bc823ce70f7a6446a557fe48d18f8c2217d0b694e3",
+      "qsf:assignments": "32151965a924b31cdd01d7514738594eaf9b13b79e8252553312cd22c0ff86d4"
+    },
+    "ip": {
+      "clk_gen:u_clk|altpll:u_pll": {
+        "vlnv": "altera:altpll:25.1",
+        "sha256": "15a61567c18701ceb43a73d0fa00dd97c251075bcf6e725d7c0fbd2451cd4c9a",
+        "provider": "fpga-vendor"
+      }
+    },
+    "options_digest": "338ac7269c0302f011dca9a113d83935e8afeb1a43410b8776c6fd19374b08fe",
+    "reviewer": "design-reviewer",
+    "testbench": {
+      "tb_cdc_ref.v": "7f0955114f53e59b472d3d683982c887eb5619dd28bca94e9393530211462297"
+    }
+  },
+  "tool": {
+    "vendor": "Altera Quartus Prime",
+    "version": "25.1std.0 Build 1129",
+    "image_sha256": "ac2fdf4146b4273aca4c5b16d8297fd0b738031d291ec6c33db376bcfa403e67",
+    "image_files": 33
+  },
+  "reports": {
+    "timing": "7f583cdf55874dbc467f2bf45cb24ce79b4378cee965470f96fddf74d8873631"
+  },
+  "bitstream": {
+    "file": "cdc_ref.jic",
+    "sha256": "d770f37003c7f95d394b0e1e8424886aee1e00d65742853f00fcef431cd48166"
+  },
+  "signature": {
+    "signer": "release-signer",
+    "approved_by": "release-approver"
+  },
+  "release": {
+    "id": "cdc_ref_c10lp",
+    "approver": "release-approver",
+    "workflow": "experiments/rq1_end_to_end/run.py",
+    "service_account": "svc-release"
+  },
+  "target": {
+    "device": "10CL025YU256I7G",
+    "idcode": "020F30DD",
+    "serial": null
+  },
+  "simulation": {
+    "record": "sim_record.json",
+    "sha256": "fa6e6dea8b3f21d06401808e6baa401734e7d34f80caa2241af5276681d6b7ab"
+  },
+  "license": {
+    "record": "license_record.json",
+    "sha256": "cac84fa7c3bd95dd49e21d45e3d513b74a6f039f6ef0844535671e38e018938a"
+  }
+}

@@ -1,0 +1,57 @@
+This evidence package accompanies the manuscript "Evidence-Gated STRIDE
+Threat Modeling for FPGA Development Toolchains" and is released under the
+following terms.
+
+================================================================================
+Data and documentation
+================================================================================
+The data and documentation in this package -- the threat catalog, the candidate
+ledger, experiment results, and other CSV, JSON, and Markdown files -- are
+licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0).
+
+  https://creativecommons.org/licenses/by/4.0/
+
+You are free to share and adapt this material for any purpose, provided you
+give appropriate credit to the authors and the associated manuscript.
+
+================================================================================
+Source code
+================================================================================
+The source code in this package (Python, Tcl, and batch scripts, Verilog HDL,
+and constraint files) is licensed under the MIT License:
+
+MIT License
+
+Copyright (c) 2026 Jiho Shin, Minseok Hur, Moohong Min, Aram Kim
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+Third-party material
+================================================================================
+Third-party material is NOT relicensed by this package. Vendor documentation
+and third-party source trees are not redistributed here. The build evidence
+(build_evidence/) holds the project files, reports, logs, and bitstreams that
+the vendor tools produced from the test design of this package; the output
+products that the vendor tools generate for their IP cores are left out. Public repositories examined in the evaluation remain under
+their own upstream licenses and are referenced by pinned commit identifier
+rather than copied into this package. The PolarFire SoC PLL configuration in
+boards/disco/pf_ccc.tcl is derived from Microchip's Discovery Kit reference
+design (MIT).

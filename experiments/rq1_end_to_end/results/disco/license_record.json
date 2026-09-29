@@ -1,0 +1,11 @@
+{
+  "tool": "libero",
+  "features_logged": [
+    "synplifypro_actel"
+  ],
+  "license_source": [
+    {
+      "server": "1702@ROOT"
+    }
+  ]
+}

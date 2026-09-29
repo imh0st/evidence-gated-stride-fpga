@@ -1,0 +1,25 @@
+record,verdict,reason
+SIP-1,PARTIAL,"IP cores observed (Actel:DirectCore:COREI2C:7.2.101, Actel:DirectCore:corepwm:4.5.100, Actel:DirectCore:CORERESET_PF:2.3.100, Actel:DirectCore:CoreUARTapb:5.7.100, Actel:DirectCore:COREAXI4DMACONTROLLER:2.2.107, Actel:DirectCore:COREAXI4INTERCONNECT:2.9.100, Actel:DirectCore:COREAXI4INTERCONNECT:2.9.100, Actel:DirectCore:CoreAPB3:4.2.100, Actel:DirectCore:CoreAPB3:4.2.100, Actel:DirectCore:CoreGPIO:3.2.102, Microsemi:SgCore:PFSOC_INIT_MONITOR:1.0.309, Microchip:MiV:MIV_IHC:2.0.100, Microchip:MSS:PFSOC_MSS, Actel:DirectCore:COREAXI4SRAM:3.0.102, Actel:SgCore:PF_CCC:2.2.222, Actel:SgCore:PF_DRI:1.1.104, Actel:DirectCore:CORESPI:5.2.104); no approved IP list"
+SIP-2,PARTIAL,source digests observed; no approved digests in a release manifest
+SIP-3,PROJECT,source access log requires an organizational record
+SIM-1,PARTIAL,simulation evidence present; linkage to the design digest not checked
+SIM-2,PARTIAL,simulation evidence present; linkage to the design digest not checked
+CFG-1,PARTIAL,constraint digests observed; no approved digests in a release manifest
+CFG-2,PARTIAL,tool-option digest observed; not recorded in a release manifest
+CFG-3,SATISFIED,timing goals met (worst slack 3.832 ns)
+TENV-1,PARTIAL,tool version observed; installation digest requires an organizational record
+TENV-2,PARTIAL,licensed features logged (synplifypro_actel); no license record
+TENV-3,PARTIAL,tool version observed; not recorded in a release manifest
+TRN-1,SATISFIED,synthesized netlist and transformation log present
+TRN-2,SATISFIED,implementation database present
+TRN-3,SATISFIED,placement and routing report present
+RPT-1,PARTIAL,timing report present; digest not recorded at signoff
+RPT-2,PROJECT,source-to-bitstream lineage requires a release attestation
+RPT-3,PROJECT,report access log requires an organizational record
+BSD-1,PARTIAL,bitstream present; not bound to a release manifest
+BSD-2,PROJECT,key-handling record requires an organizational record
+BSD-3,PROJECT,signing authority requires a release manifest
+BSD-4,PARTIAL,programmed MPFS095T (0f8181cf); no authorized target in manifest
+DEP-1,SATISFIED,device verification passed (array verify and device digest check)
+REL-1,PROJECT,release manifest not supplied
+REL-2,PROJECT,release pipeline identity not supplied
