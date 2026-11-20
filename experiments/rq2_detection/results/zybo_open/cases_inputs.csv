@@ -1,0 +1,3 @@
+board,case,expected,egaudit_verdict,egaudit_detected,other_records_worse,vendor_flags,note
+zybo_open,A14,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True configuration_changed=True
+zybo_open,A15,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True configuration_changed=True

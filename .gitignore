@@ -1,0 +1,13 @@
+build/
+*.jou
+*.log
+# programming, readback, and simulator logs kept as results
+!experiments/**/results/**/*.log
+.Xil/
+__pycache__/
+*.rbd
+dfx_runtime.txt
+_ev.json
+# FlashPro Express job projects (contain the programming data)
+fpx/
+*.ppd

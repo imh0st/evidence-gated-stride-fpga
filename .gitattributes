@@ -1,0 +1,8 @@
+# Keep byte-identical sources on every platform: constraint and HDL digests are
+# part of the evidence chain, so line endings must not be rewritten on checkout.
+* text=auto eol=lf
+*.bat text eol=crlf
+# Build evidence and programming logs are kept byte for byte: egaudit hashes them.
+build/** -text
+experiments/rq1_end_to_end/results/*/program/** -text
+experiments/**/results/**/*.log -text

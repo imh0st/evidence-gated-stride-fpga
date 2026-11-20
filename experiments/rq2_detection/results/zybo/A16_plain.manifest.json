@@ -1,0 +1,55 @@
+{
+  "design": "R14",
+  "approved": {
+    "sources": {
+      "async_fifo.v": "34758d7b0b7771d8bf23dae727229bbb3cb7e32fa23a829a8873bab3bba63421",
+      "cdc_ref_core.v": "0e79201b4e0e2e9a05581a155292e16a40b3915a48b08a3ed542c07e03b12249",
+      "clk_gen.v": "48a9de96f96a10b95099ebb9e619437178c92fc3a05d5768ca0091e3fab6f4f3",
+      "reset_sync.v": "5a4ed8513a8cb9af2edf8f7261e90e011d2eee2e1f5d167e5fe4424ec906dbef",
+      "rom.v": "251dec1e4d7fceaeb49cf856db4445b13f8bf9a1626c2c3aa1ae57abf7267e07",
+      "board_top.v": "4eb8c22e8015d0ddbbe751cce99db30440f827bede061d160d02ad2a759d527a",
+      "rom_params.vh": "3461017efcd37efda4d6927168b91c403868965784df699d5c36695e82a4ca46",
+      "rom_init.mem": "dd5fccd8dcebb0fc47efef8df6cc72c18942e5f1ceaacfe41477eecb62c3e889"
+    },
+    "constraints": {
+      "pins.xdc": "1cc38e23b7d9210b4510e9ba2c7de9c4938ac2040ab8490ea5afd0559107fcab",
+      "sync.xdc": "ef4dd2d410ee622960b4b74b5a2c2bc4ab022c1e208ffd9d657b428b36913187",
+      "cdc.xdc": "85f993238d6dc01da2b9c9f59d1d700b3d871d3f3e0a7366b197d96b3ab1efda"
+    },
+    "ip": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "sha256": "d623649357a6088530ecacd494001e3268a3b6e12c627488a9a4bc9939d20fc4",
+        "provider": "fpga-vendor"
+      }
+    },
+    "options_digest": "8cd42dcd31ab80cd6395d4eeaea9db19112c9a569211457fd30408e8cfdc5e7e",
+    "reviewer": "design-reviewer"
+  },
+  "tool": {
+    "vendor": "AMD Vivado",
+    "version": "v2025.2"
+  },
+  "reports": {
+    "timing": "21f7a76cc93d0c61bf210117e119ce3a8273bffd9296d1078ec61009ebaa92e4"
+  },
+  "bitstream": {
+    "file": "cdc_ref.bit",
+    "sha256": "f23bd13388162a6c201b5b51f13439063e0fa64b99ed097eef56ab300324e56d"
+  },
+  "signature": {
+    "signer": "release-signer",
+    "approved_by": "release-approver"
+  },
+  "release": {
+    "id": "cdc_ref_rom_zybo",
+    "approver": "release-approver",
+    "workflow": "experiments/rq1_end_to_end/run.py",
+    "service_account": "svc-release"
+  },
+  "target": {
+    "device": "xc7z020clg400-1",
+    "idcode": "23727093",
+    "serial": null
+  }
+}

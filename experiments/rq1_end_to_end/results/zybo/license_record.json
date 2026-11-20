@@ -1,0 +1,17 @@
+{
+  "tool": "vivado",
+  "features_logged": [
+    "Implementation",
+    "Synthesis"
+  ],
+  "license_source": [
+    {
+      "file": "Xilinx (3).lic",
+      "sha256": "14b661bce23d45b42d6cc271869d6ddbb0249083782b58f290009451f76911f3"
+    },
+    {
+      "file": "Xilinx.lic",
+      "sha256": "404642e66648a6ae4e2e19b26911f57b4f7222285d510ca553b12cf05136255d"
+    }
+  ]
+}

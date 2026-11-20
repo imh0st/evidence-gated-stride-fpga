@@ -1,0 +1,5 @@
+board,case,verdicts_differing_from_N2,file_identical_to_release,configuration_identical_to_release,note
+zybo_open,N2r1,none,0,1,build_s=9
+zybo_open,N2r2,none,0,1,build_s=10
+zybo_open,N2r3,none,0,1,build_s=10
+zybo_open,N2r4,none,0,1,build_s=9

@@ -1,0 +1,4 @@
+board,case,expected,egaudit_verdict,egaudit_detected,other_records_worse,flagged_without_rebuild,note
+zybo_open,N5,,,,,none,"rebuild=R14r; RQ1 release against N2, N2r1-N2r4: BSD-1 SATISFIED;SATISFIED;SATISFIED;SATISFIED;SATISFIED"
+zybo_open,A16,BSD-1,VIOLATED,1,,none,restored=rom_init.mem
+zybo_open,A17,BSD-1,VIOLATED,1,,none,configuration_changed=True

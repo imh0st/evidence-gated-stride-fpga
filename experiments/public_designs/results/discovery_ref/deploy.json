@@ -1,0 +1,11 @@
+{
+  "tool": "FlashPro Express",
+  "device": "MPFS095T",
+  "idcode": "0f8181cf",
+  "serial": "6646180cba578c73b3eb984f201a9204",
+  "verify": "PASS",
+  "verify_method": "array verify and device digest check",
+  "programming_file": "MPFS_DISCOVERY.job",
+  "bitstream_sha256": "02904c6c690e1a17c0cef237a77a903d233e795f16f4d3fd7f214ec24eabb7f7",
+  "operator": "board-operator"
+}

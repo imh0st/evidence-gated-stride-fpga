@@ -1,0 +1,13 @@
+[project]
+name = "egaudit"
+version = "1.0.0"
+description = "Check FPGA build, release, and deployment evidence against evidence-gated STRIDE threat records"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+egaudit = "egaudit.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,46 @@
+{
+  "design": "out",
+  "approved": {
+    "sources": {
+      "picosoc.v": "86a1693c4844a0d11353e7524f38303d86be7aaf6ee82be2769c87e21b7b7be8",
+      "spimemio.v": "3bbd69ef9d49ba82d0fb952a8ca68d0360f6ad4b0bb2aa55e5f1ce1744a7188e",
+      "simpleuart.v": "6b970be4255ef5f951f80a3b0cb27f73844df94349f4e4460bc4dbc4bb49ca1b",
+      "picorv32.v": "0836050971b3c6cdd28ac3b1e5719a67fb645161912bef1e472e63995ceb0622",
+      "board_top.v": "0343ca5b9218ac9449df21394c3c87d6283af0e9eeb1f75fda1d28d4ee09226a",
+      "clk_gen.v": "99e4ae582111b6d3aab7256e2abfa837c11023c36a37937480dd0e341eb4ceb5"
+    },
+    "constraints": {
+      "pins.xdc": "f836c93551e1f14840e14688c0a2a23f33cb8158daf49143599a8b157b6bafe1",
+      "clocks.xdc": "7bd925def1ffdafbe7cb5d307db9134ff939534ad605b9b94a15ebb32fb5368d"
+    },
+    "ip": {},
+    "options_digest": "e48e84947816ab9613bff79ea716e90f925dcac14ec433577c912f4f09eb3635",
+    "reviewer": "design-reviewer"
+  },
+  "tool": {
+    "vendor": "openXC7 (Yosys, nextpnr-xilinx)",
+    "version": "Yosys 0.63+173; nextpnr-xilinx a9ceeec"
+  },
+  "reports": {
+    "timing": "3b49d2c505c451c0ea6fecfdd00c2502693859816aa28832042a00344ed2afb4"
+  },
+  "bitstream": {
+    "file": "picosoc_zybo.bit",
+    "sha256": "ac08e4b41cefdfdd11c76f7ddb768505ed4e8e5c08896e69db21a15b04475d56"
+  },
+  "signature": {
+    "signer": "release-signer",
+    "approved_by": "release-approver"
+  },
+  "release": {
+    "id": "picosoc_zybo",
+    "approver": "release-approver",
+    "workflow": "experiments/public_designs/run.py",
+    "service_account": "svc-release"
+  },
+  "target": {
+    "device": "xc7z020clg400-1",
+    "idcode": "23727093",
+    "serial": null
+  }
+}

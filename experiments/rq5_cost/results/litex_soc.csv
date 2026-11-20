@@ -1,0 +1,2 @@
+cores,logic_unit,logic_used,logic_available,ff_used,files,bytes,vendor_build_s,exit_code,egaudit_mean_s,egaudit_sd_s
+32,LUT,1041226,1728000,483220,210,2249445070,17099.8,0,1.786,0.047

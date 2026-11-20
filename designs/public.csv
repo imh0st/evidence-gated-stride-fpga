@@ -1,0 +1,7 @@
+design,board,source,version,license
+zybo_hdmi,zybo,https://github.com/Digilent/Zybo-Z7/releases/download/20%2FHDMI%2F2025.1-1/Zybo-Z7-20-HDMI-hw.xpr.zip,20/HDMI/2025.1-1,no license file in the release (Digilent); not redistributed
+vivado_library,,https://raw.githubusercontent.com/Digilent/vivado-library,f4613fff005b098065fd5d619a2b88e55720a423,MIT (Digilent)
+c10lp_multiproc,c10lp,https://docs.altera.com/r/example-designs/714849/current/cyclone-10-lp-fpga-multiprocessor-nios-ii-processor-system-reference-design/detailed-description,top.par (Quartus 17.0),Intel design example license; not redistributed
+discovery_ref,disco,https://github.com/polarfire-soc/polarfire-soc-discovery-kit-reference-design.git,f09b6e0d,Microchip reference design license (LICENSE.md in the repository)
+discovery_image,,https://github.com/polarfire-soc/polarfire-soc-discovery-kit-reference-design/releases/download/v2026.04/MPFS_DISCOVERY_2026_04.zip,v2026.04,Microchip reference design license; released image used to restore the board
+picosoc_zybo,zybo_open,https://github.com/YosysHQ/picorv32.git,87c89acc,ISC

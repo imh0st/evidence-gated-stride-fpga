@@ -1,0 +1,5 @@
+set_instance_assignment -name SYNCHRONIZER_IDENTIFICATION FORCED -to "*|wq1_rptr*"
+set_instance_assignment -name SYNCHRONIZER_IDENTIFICATION FORCED -to "*|wq2_rptr*"
+set_instance_assignment -name SYNCHRONIZER_IDENTIFICATION FORCED -to "*|rq1_wptr*"
+set_instance_assignment -name SYNCHRONIZER_IDENTIFICATION FORCED -to "*|rq2_wptr*"
+set_instance_assignment -name SYNCHRONIZER_IDENTIFICATION FORCED -to "*|reset_sync:*|sync*"

@@ -1,0 +1,54 @@
+{
+  "design": "R14",
+  "approved": {
+    "sources": {
+      "hdl/async_fifo.v": "34758d7b0b7771d8bf23dae727229bbb3cb7e32fa23a829a8873bab3bba63421",
+      "hdl/board_top.v": "4eb8c22e8015d0ddbbe751cce99db30440f827bede061d160d02ad2a759d527a",
+      "hdl/cdc_ref_core.v": "0e79201b4e0e2e9a05581a155292e16a40b3915a48b08a3ed542c07e03b12249",
+      "hdl/clk_gen.v": "588228e468a6a2474fd35f85e30f3cf07d047f742111a172d7c458f4fceae645",
+      "hdl/reset_sync.v": "5a4ed8513a8cb9af2edf8f7261e90e011d2eee2e1f5d167e5fe4424ec906dbef",
+      "hdl/rom.v": "4ab7432ca5321abc5cf37619144967e6e961b8aae382c6f38218767fc17fadf0",
+      "rom_params.vh": "3461017efcd37efda4d6927168b91c403868965784df699d5c36695e82a4ca46",
+      "rom_init.mem": "dd5fccd8dcebb0fc47efef8df6cc72c18942e5f1ceaacfe41477eecb62c3e889"
+    },
+    "constraints": {
+      "cdc.sdc": "84cd1f8f8ad4913dfbf41a2146434329e7070ae9b4e32efad15c1eba432947f2",
+      "pins.pdc": "8a93917fbca81643411523f6872c5c9b67a32c8ed8061d5022e85fc4fd037b34"
+    },
+    "ip": {
+      "PF_CCC_C0": {
+        "vlnv": "Actel:SgCore:PF_CCC:2.2.222",
+        "sha256": "935a73d07a1a9e4a4bb4be766485b21c162fbc12aec2255afcb7497cdaf06452",
+        "provider": "fpga-vendor"
+      }
+    },
+    "options_digest": "29f958b3b83f8c48f0133bbae3cdddf25a33ec07917c3d3591ac430028cd51d3",
+    "reviewer": "design-reviewer"
+  },
+  "tool": {
+    "vendor": "Microchip Libero SoC",
+    "version": "2025.2.0.14"
+  },
+  "reports": {
+    "timing": "bcba2cef4eb0eecdc36442187a7e4863267d578494856441db74f747e7c8fa1d"
+  },
+  "bitstream": {
+    "file": "export/cdc_ref.job",
+    "sha256": "d6b2f3e77099aa852da92b7cfeade8023412947b29c14697e3ca1ca51eb79b41"
+  },
+  "signature": {
+    "signer": "release-signer",
+    "approved_by": "release-approver"
+  },
+  "release": {
+    "id": "cdc_ref_rom_disco",
+    "approver": "release-approver",
+    "workflow": "experiments/rq1_end_to_end/run.py",
+    "service_account": "svc-release"
+  },
+  "target": {
+    "device": "PA5SOC095T",
+    "idcode": "0f8181cf",
+    "serial": "6646180cba578c73b3eb984f201a9204"
+  }
+}

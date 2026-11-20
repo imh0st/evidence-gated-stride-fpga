@@ -1,0 +1,5 @@
+board,case,verdicts_differing_from_N2,file_identical_to_release,configuration_identical_to_release,note
+c10lp,N2r1,none,1,1,build_s=18
+c10lp,N2r2,none,1,1,build_s=18
+c10lp,N2r3,none,1,1,build_s=18
+c10lp,N2r4,none,1,1,build_s=18

@@ -1,0 +1,5 @@
+board,case,expected,egaudit_verdict,egaudit_detected,other_records_worse,vendor_flags,note
+zybo,A10,SIP-1,VIOLATED,1,,0,
+zybo,A11,CFG-3,VIOLATED,1,CFG-1;RPT-2,1,timing_met=False
+zybo,A12,TRN-1;TRN-2;TRN-3,MISSING;MISSING;MISSING,1,,,deleted=3
+zybo,A13,REL-2,MISSING,1,RPT-2,,

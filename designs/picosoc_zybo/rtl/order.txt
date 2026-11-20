@@ -1,0 +1,5 @@
+picosoc.v
+spimemio.v
+simpleuart.v
+picorv32.v
+board_top.v

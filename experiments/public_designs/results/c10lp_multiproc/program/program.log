@@ -1,0 +1,41 @@
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+Info: *******************************************************************
+Info: Running Quartus Prime Programmer
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Standard Edition
+    Info: Copyright (C) 2025  Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+    Info: the Altera IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Altera and sold by Altera or its authorized distributors.  Please
+    Info: refer to the Altera Software License Subscription Agreements 
+    Info: on the Quartus Prime software download page.
+    Info: Processing started: Tue Sep 29 13:57:50 2026
+Info: Command: quartus_pgm -c 1 G:\2026_CS\git_upload\experiments\public_designs\results\c10lp_multiproc\program\chain.cdf
+Info (213045): Using programming cable "Cyclone 10 LP Evaluation Kit [USB-1]"
+Info (213011): Using programming file G:/2026_CS/git_upload/build/public/c10lp_multiproc/top_level.jic with checksum 0xF5187B95 for device 10CL025Y@1
+Info (209060): Started Programmer operation at Tue Sep 29 13:57:51 2026
+Info (209016): Configuring device index 1
+Info (209017): Device 1 contains JTAG ID code 0x020F30DD
+Info (209007): Configuration succeeded -- 1 device(s) configured
+Info (19845): Start Serial Flash Loader programming
+Info (19844): Device 2 is a dummy bit in JTAG chain.
+Info (209018): Device 1 silicon ID is 0x18
+Info (209044): Erasing ASP configuration device(s)
+Info (209019): Blank-checking device(s)
+Info (209023): Programming device(s)
+Info (209021): Performing CRC verification on device(s)
+Info (19845): End Serial Flash Loader programming
+Info (209011): Successfully performed operation(s)
+Info (209061): Ended Programmer operation at Tue Sep 29 13:58:40 2026
+Info: Quartus Prime Programmer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4489 megabytes
+    Info: Processing ended: Tue Sep 29 13:58:40 2026
+    Info: Elapsed time: 00:00:50
+    Info: Total CPU time (on all processors): 00:00:02

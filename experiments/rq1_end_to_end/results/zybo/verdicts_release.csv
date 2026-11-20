@@ -1,0 +1,25 @@
+record,verdict,reason
+SIP-1,SATISFIED,"every IP core matches an approved core, configuration, and provider"
+SIP-2,SATISFIED,source digests match the approved set
+SIP-3,PROJECT,source access log requires an organizational record
+SIM-1,MISSING,no simulation evidence in the build or manifest
+SIM-2,MISSING,no simulation evidence in the build or manifest
+CFG-1,SATISFIED,constraint digests match the approved set
+CFG-2,SATISFIED,tool-option digest matches the release manifest
+CFG-3,SATISFIED,timing goals met (worst slack 6.355 ns)
+TENV-1,PARTIAL,tool version observed; installation digest requires an organizational record
+TENV-2,PARTIAL,"licensed features logged (Implementation, Synthesis); no license record"
+TENV-3,SATISFIED,tool version matches the release manifest
+TRN-1,SATISFIED,synthesized netlist and transformation log present
+TRN-2,SATISFIED,implementation database present
+TRN-3,SATISFIED,placement and routing report present
+RPT-1,SATISFIED,timing report matches the digest recorded at signoff
+RPT-2,SATISFIED,"source, constraint, and bitstream digests chain to one workflow"
+RPT-3,PROJECT,report access log requires an organizational record
+BSD-1,SATISFIED,bitstream digest matches the release manifest
+BSD-2,PROJECT,key-handling record requires an organizational record
+BSD-3,SATISFIED,signer and signing approval recorded
+BSD-4,SATISFIED,programmed device matches the authorized target
+DEP-1,SATISFIED,device verification passed (masked configuration readback)
+REL-1,SATISFIED,release manifest with release approval
+REL-2,SATISFIED,release workflow and service account recorded

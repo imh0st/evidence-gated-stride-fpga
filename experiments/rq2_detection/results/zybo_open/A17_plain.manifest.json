@@ -1,0 +1,48 @@
+{
+  "design": "R14",
+  "approved": {
+    "sources": {
+      "async_fifo.v": "34758d7b0b7771d8bf23dae727229bbb3cb7e32fa23a829a8873bab3bba63421",
+      "board_top.v": "4eb8c22e8015d0ddbbe751cce99db30440f827bede061d160d02ad2a759d527a",
+      "cdc_ref_core.v": "0e79201b4e0e2e9a05581a155292e16a40b3915a48b08a3ed542c07e03b12249",
+      "reset_sync.v": "5a4ed8513a8cb9af2edf8f7261e90e011d2eee2e1f5d167e5fe4424ec906dbef",
+      "rom.v": "db7755fcb53758a1ddc2a24c87285bd1932b9efdd4a8a8710de45a0c230ef932",
+      "clk_gen.v": "139dd98402685579e94fb5658a5827ecdf607ffa6f7cfe0dc9940cd239fe8fd6",
+      "rom_params.vh": "3461017efcd37efda4d6927168b91c403868965784df699d5c36695e82a4ca46",
+      "rom_init.mem": "dd5fccd8dcebb0fc47efef8df6cc72c18942e5f1ceaacfe41477eecb62c3e889"
+    },
+    "constraints": {
+      "pins.xdc": "d64bbde75aeba716bf0900c049d6991a14123f8199d4ca1b885d82bb1c3fcf5f",
+      "cdc.xdc": "4892ab88f49e62f1af392393d684585a8c7b6283b488fdb870160cda15f31c6d"
+    },
+    "ip": {},
+    "options_digest": "e48e84947816ab9613bff79ea716e90f925dcac14ec433577c912f4f09eb3635",
+    "reviewer": "design-reviewer"
+  },
+  "tool": {
+    "vendor": "openXC7 (Yosys, nextpnr-xilinx)",
+    "version": "Yosys 0.63+173; nextpnr-xilinx a9ceeec"
+  },
+  "reports": {
+    "timing": "7d3cb55b4756388dcee2507c9e313720b6753461fdb32b138dcd5770027ebdab"
+  },
+  "bitstream": {
+    "file": "cdc_ref.bit",
+    "sha256": "6585cdcf76f359be40d4ea013f25c2998961a2f8f3ff40765143543339ed16c6"
+  },
+  "signature": {
+    "signer": "release-signer",
+    "approved_by": "release-approver"
+  },
+  "release": {
+    "id": "cdc_ref_rom_zybo_open",
+    "approver": "release-approver",
+    "workflow": "experiments/rq1_end_to_end/run.py",
+    "service_account": "svc-release"
+  },
+  "target": {
+    "device": "xc7z020clg400-1",
+    "idcode": "23727093",
+    "serial": null
+  }
+}

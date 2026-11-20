@@ -1,0 +1,41 @@
+Software Version: 2025.2.0.14
+Programmer 'E203ASSQZJ' : JTAG TCK / SPI SCK frequency = 1 MHz
+programmer 'E203ASSQZJ' : FlashPro5
+Created new project 'experiments\rq1_end_to_end\results\disco\program\fpx\cdc_ref\cdc_ref.pro'
+PPD file 'experiments\rq1_end_to_end\results\disco\program\fpx\cdc_ref\cdc_ref.ppd' has been loaded successfully.
+DESIGN : board_top;  CHECKSUM : EC55;  PDB_VERSION : 1.0
+Software Version: 2025.2.0.14
+PPD file 'experiments\rq1_end_to_end\results\disco\program\fpx\cdc_ref\cdc_ref.ppd' has been loaded successfully.
+DESIGN : board_top;  CHECKSUM : EC55;  PDB_VERSION : 1.0
+Programmer 'E203ASSQZJ' : JTAG TCK / SPI SCK frequency = 1 MHz
+programmer 'E203ASSQZJ' : FlashPro5
+The 'create_job_project' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'E203ASSQZJ' : Scan Chain...
+Programmer 'E203ASSQZJ' : JTAG TCK / SPI SCK frequency = 1 MHz
+programmer 'E203ASSQZJ' : Check Chain...
+programmer 'E203ASSQZJ' : Scan and Check Chain PASSED.
+programmer 'E203ASSQZJ' : device 'MPFS095T' : Executing action VERIFY
+Programmer 'E203ASSQZJ' : JTAG TCK / SPI SCK frequency = 4 MHz
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT Algo_version[16] = 0002
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT IDCODE[32] = 0f8181cf
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT ISC_ENABLE_RESULT[32] = 00000000
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT CRCERR[1] = 0
+programmer 'E203ASSQZJ' : device 'MPFS095T' : Verifying FPGA Array and sNVM...
+programmer 'E203ASSQZJ' : device 'MPFS095T' : ===================================================================================
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT DSN[128] = 6646180cba578c73b3eb984f201a9204
+programmer 'E203ASSQZJ' : device 'MPFS095T' : ===================================================================================
+programmer 'E203ASSQZJ' : Finished: Thu Sep 24 18:02:16 2026 (Elapsed time 00:00:30)
+programmer 'E203ASSQZJ' : device 'MPFS095T' : Executing action VERIFY PASSED.
+programmer 'E203ASSQZJ' : Chain programming PASSED.
+Chain Programming Finished: Thu Sep 24 18:02:16 2026 (Elapsed time 00:00:30)
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+Exported log file experiments/rq1_end_to_end/results/disco/program/fpx/VERIFY.log.
+The 'save_log' command succeeded.
+Project closed.
+Exported log file experiments/rq1_end_to_end/results/disco/program/verify.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

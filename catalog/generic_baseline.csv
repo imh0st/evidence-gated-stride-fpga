@@ -1,0 +1,55 @@
+stage,record_group,stride,question,outcome,mapped_records,rationale
+HDL/IP Input,Source/IP,Spoofing,Apply Spoofing to HDL/IP Input.,direct_retained,SIP-1,IP provider identity maps directly to a retained source/IP record.
+HDL/IP Input,Source/IP,Tampering,Apply Tampering to HDL/IP Input.,direct_retained,SIP-2,HDL/IP modification maps directly to source tampering.
+HDL/IP Input,Source/IP,Repudiation,Apply Repudiation to HDL/IP Input.,requires_artifact_rewrite,RPT-2; REL-1,Useful only after rewriting as source-to-build or release-lineage evidence.
+HDL/IP Input,Source/IP,Information Disclosure,Apply Information Disclosure to HDL/IP Input.,direct_retained,SIP-3,Proprietary HDL/IP disclosure is a retained record.
+HDL/IP Input,Source/IP,Denial of Service,Apply Denial of Service to HDL/IP Input.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+HDL/IP Input,Source/IP,Elevation of Privilege,Apply Elevation of Privilege to HDL/IP Input.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Simulation,Simulation,Spoofing,Apply Spoofing to Simulation.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Simulation,Simulation,Tampering,Apply Tampering to Simulation.,direct_retained,SIM-1; SIM-2,Simulation collateral or result modification maps to retained simulation records.
+Simulation,Simulation,Repudiation,Apply Repudiation to Simulation.,direct_retained,SIM-1,Unattributed verification collateral maps to retained simulation evidence.
+Simulation,Simulation,Information Disclosure,Apply Information Disclosure to Simulation.,direct_retained,SIM-2,Simulation result and waveform exposure is a retained record.
+Simulation,Simulation,Denial of Service,Apply Denial of Service to Simulation.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Simulation,Simulation,Elevation of Privilege,Apply Elevation of Privilege to Simulation.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Constraint and Configuration,Configuration,Spoofing,Apply Spoofing to Constraint and Configuration.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Constraint and Configuration,Configuration,Tampering,Apply Tampering to Constraint and Configuration.,direct_retained,CFG-1; CFG-2,Constraint and option modification maps to retained configuration records.
+Constraint and Configuration,Configuration,Repudiation,Apply Repudiation to Constraint and Configuration.,requires_artifact_rewrite,RPT-2,Useful only after rewriting as constraint approval and downstream report lineage.
+Constraint and Configuration,Configuration,Information Disclosure,Apply Information Disclosure to Constraint and Configuration.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Constraint and Configuration,Configuration,Denial of Service,Apply Denial of Service to Constraint and Configuration.,direct_retained,CFG-3,Timing-closure or resource-pressure failure from configuration maps directly to CFG-3.
+Constraint and Configuration,Configuration,Elevation of Privilege,Apply Elevation of Privilege to Constraint and Configuration.,requires_artifact_rewrite,REL-2,Useful only after rewriting as unauthorized configuration or release authority.
+Tool Environment,Tool environment,Spoofing,Apply Spoofing to Tool Environment.,direct_retained,TENV-1,Tool image or plugin identity maps to retained tool-environment identity.
+Tool Environment,Tool environment,Tampering,Apply Tampering to Tool Environment.,direct_retained,TENV-1; TENV-3,"Tool image, plugin, version, or update-state modification maps to retained records."
+Tool Environment,Tool environment,Repudiation,Apply Repudiation to Tool Environment.,direct_retained,TENV-2; TENV-3,"License, version, and update-state provenance gaps map to retained records."
+Tool Environment,Tool environment,Information Disclosure,Apply Information Disclosure to Tool Environment.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Tool Environment,Tool environment,Denial of Service,Apply Denial of Service to Tool Environment.,direct_retained,TENV-2,License-state availability maps to retained tool-environment evidence.
+Tool Environment,Tool environment,Elevation of Privilege,Apply Elevation of Privilege to Tool Environment.,requires_artifact_rewrite,REL-2,Useful only after rewriting as build/release authority over generated FPGA artifacts.
+Transformation,Transformation,Spoofing,Apply Spoofing to Transformation.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Transformation,Transformation,Tampering,Apply Tampering to Transformation.,direct_retained,TRN-1; TRN-2,Netlist or implementation-state modification maps to retained transformation records.
+Transformation,Transformation,Repudiation,Apply Repudiation to Transformation.,direct_retained,RPT-2,Missing transformation lineage maps to retained build-lineage evidence.
+Transformation,Transformation,Information Disclosure,Apply Information Disclosure to Transformation.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Transformation,Transformation,Denial of Service,Apply Denial of Service to Transformation.,direct_retained,TRN-3,Routing-state availability maps to retained transformation DoS.
+Transformation,Transformation,Elevation of Privilege,Apply Elevation of Privilege to Transformation.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Report Generation,Report,Spoofing,Apply Spoofing to Report Generation.,requires_artifact_rewrite,RPT-2,Useful only after rewriting as report identity and build-lineage evidence.
+Report Generation,Report,Tampering,Apply Tampering to Report Generation.,direct_retained,RPT-1,Signoff-report modification maps directly to retained report tampering.
+Report Generation,Report,Repudiation,Apply Repudiation to Report Generation.,direct_retained,RPT-2,Missing report-to-build lineage maps to retained repudiation evidence.
+Report Generation,Report,Information Disclosure,Apply Information Disclosure to Report Generation.,direct_retained,RPT-3,Report/log disclosure maps directly to retained report confidentiality.
+Report Generation,Report,Denial of Service,Apply Denial of Service to Report Generation.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Report Generation,Report,Elevation of Privilege,Apply Elevation of Privilege to Report Generation.,requires_artifact_rewrite,REL-2,Useful only after rewriting as signoff or release authority abuse.
+Bitstream Generation,Bitstream,Spoofing,Apply Spoofing to Bitstream Generation.,direct_retained,BSD-1,Bitstream identity substitution maps directly to BSD-1.
+Bitstream Generation,Bitstream,Tampering,Apply Tampering to Bitstream Generation.,direct_retained,BSD-1,Bitstream modification maps directly to BSD-1.
+Bitstream Generation,Bitstream,Repudiation,Apply Repudiation to Bitstream Generation.,requires_artifact_rewrite,RPT-2; REL-1,Useful only after rewriting as bitstream lineage or release-manifest evidence.
+Bitstream Generation,Bitstream,Information Disclosure,Apply Information Disclosure to Bitstream Generation.,direct_retained,BSD-2,Bitstream or key disclosure maps directly to BSD-2.
+Bitstream Generation,Bitstream,Denial of Service,Apply Denial of Service to Bitstream Generation.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Bitstream Generation,Bitstream,Elevation of Privilege,Apply Elevation of Privilege to Bitstream Generation.,direct_retained,BSD-3,Unauthorized signing authority maps directly to BSD-3.
+Programming and Deployment,Deployment,Spoofing,Apply Spoofing to Programming and Deployment.,direct_retained,BSD-4,Programming-target identity maps directly to BSD-4.
+Programming and Deployment,Deployment,Tampering,Apply Tampering to Programming and Deployment.,direct_retained,DEP-1,Readback/status manipulation maps directly to DEP-1.
+Programming and Deployment,Deployment,Repudiation,Apply Repudiation to Programming and Deployment.,requires_artifact_rewrite,REL-1; DEP-1,Useful only after rewriting as programming accountability and deployment evidence.
+Programming and Deployment,Deployment,Information Disclosure,Apply Information Disclosure to Programming and Deployment.,direct_retained,DEP-1,Readback/status exposure maps directly to DEP-1.
+Programming and Deployment,Deployment,Denial of Service,Apply Denial of Service to Programming and Deployment.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Programming and Deployment,Deployment,Elevation of Privilege,Apply Elevation of Privilege to Programming and Deployment.,direct_retained,BSD-4,Unauthorized programming target/action maps directly to BSD-4.
+Release Automation,Release automation,Spoofing,Apply Spoofing to Release Automation.,requires_artifact_rewrite,REL-2,Useful only after rewriting as release service-account or authority identity.
+Release Automation,Release automation,Tampering,Apply Tampering to Release Automation.,requires_artifact_rewrite,REL-1; BSD-1,Useful only after rewriting as release-manifest or bitstream substitution evidence.
+Release Automation,Release automation,Repudiation,Apply Repudiation to Release Automation.,direct_retained,REL-1,Missing or disputed release manifest maps directly to REL-1.
+Release Automation,Release automation,Information Disclosure,Apply Information Disclosure to Release Automation.,requires_artifact_rewrite,SIP-3; RPT-3; BSD-2,Useful only after rewriting around the exposed FPGA artifact family.
+Release Automation,Release automation,Denial of Service,Apply Denial of Service to Release Automation.,generic_or_no_distinct_record,,Mechanical STRIDE question lacks a distinct retained FPGA artifact/evidence record in the scoped catalog.
+Release Automation,Release automation,Elevation of Privilege,Apply Elevation of Privilege to Release Automation.,direct_retained,REL-2,Release-pipeline privilege abuse maps directly to REL-2.

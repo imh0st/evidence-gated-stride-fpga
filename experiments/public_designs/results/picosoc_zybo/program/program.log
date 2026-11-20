@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Sep 29 06:49:17 2026
+# Process ID         : 86360
+# Current directory  : G:/2026_CS/git_upload/experiments/public_designs/results/picosoc_zybo/program
+# Command line       : vivado.exe -mode batch -nojournal -log G:\2026_CS\git_upload\experiments\public_designs\results\picosoc_zybo\program\program.log -source G:\2026_CS\git_upload\flows\program\vivado_readback.tcl -tclargs G:/2026_CS/git_upload/build/public/picosoc_zybo/out/picosoc_zybo.bit - G:/2026_CS/git_upload/experiments/public_designs/results/picosoc_zybo/program/readback.bin
+# Log file           : G:/2026_CS/git_upload/experiments/public_designs/results/picosoc_zybo/program/program.log
+# Journal file       : 
+# Running On         : root
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7700X 8-Core Processor             
+# CPU Frequency      : 4500 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 67517 MB
+# Swap memory        : 10582 MB
+# Total Virtual      : 78100 MB
+# Available Virtual  : 20118 MB
+#-----------------------------------------------------------
+source {G:\2026_CS\git_upload\flows\program\vivado_readback.tcl}
+# lassign $argv bit msk bin
+# open_hw_manager
+open_hw_manager: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 561.270 ; gain = 223.570
+# connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2025.2
+  **** Build date : Oct 28 2025 at 10:03:13
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2025.2.0
+  ****** Build date   : Nov 14 2025-08:16:52
+    **** Build number : 2025.2.1763075812
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 566.227 ; gain = 4.957
+# open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351BA1D18A
+# set dev [lindex [get_hw_devices xc7z020*] 0]
+# current_hw_device $dev
+# puts "TARGET [current_hw_target]"
+TARGET localhost:3121/xilinx_tcf/Digilent/210351BA1D18A
+# puts "DEVICE [get_property PART $dev] IDCODE [get_property IDCODE $dev]"
+DEVICE xc7z020 IDCODE 00100011011100100111000010010011
+# if {$msk eq "-"} {
+#     create_hw_bitstream -hw_device $dev $bit
+# } else {
+#     create_hw_bitstream -hw_device $dev -mask $msk $bit
+# }
+# program_hw_devices $dev
+INFO: [Labtools 27-3164] End of startup status: HIGH
+# catch {puts "DONE_PIN [get_property REGISTER.CONFIG_STATUS.BIT14_DONE_PIN $dev]"}
+DONE_PIN 1
+# if {$msk ne "-"} {
+#     verify_hw_devices $dev
+# }
+# readback_hw_device -force -bin_file $bin $dev
+INFO: [Labtools 27-3158] Creating file: G:\2026_CS\git_upload\experiments\public_designs\results\picosoc_zybo\program\readback.bin
+# puts "READBACK_FILE $bin"
+READBACK_FILE G:/2026_CS/git_upload/experiments/public_designs/results/picosoc_zybo/program/readback.bin
+# close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210351BA1D18A
+# disconnect_hw_server
+# close_hw_manager
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 29 06:49:58 2026...

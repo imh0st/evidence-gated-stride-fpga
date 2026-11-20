@@ -1,0 +1,66 @@
+Software Version: 2025.2.0.14
+Programmer 'E203ASSQZJ' : JTAG TCK / SPI SCK frequency = 1 MHz
+programmer 'E203ASSQZJ' : FlashPro5
+Created new project 'experiments\rq1_end_to_end\results\disco\program\fpx\cdc_ref\cdc_ref.pro'
+PPD file 'experiments\rq1_end_to_end\results\disco\program\fpx\cdc_ref\cdc_ref.ppd' has been loaded successfully.
+DESIGN : board_top;  CHECKSUM : EC55;  PDB_VERSION : 1.0
+Software Version: 2025.2.0.14
+PPD file 'experiments\rq1_end_to_end\results\disco\program\fpx\cdc_ref\cdc_ref.ppd' has been loaded successfully.
+DESIGN : board_top;  CHECKSUM : EC55;  PDB_VERSION : 1.0
+Programmer 'E203ASSQZJ' : JTAG TCK / SPI SCK frequency = 1 MHz
+programmer 'E203ASSQZJ' : FlashPro5
+The 'create_job_project' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'E203ASSQZJ' : Scan Chain...
+Programmer 'E203ASSQZJ' : JTAG TCK / SPI SCK frequency = 1 MHz
+programmer 'E203ASSQZJ' : Check Chain...
+programmer 'E203ASSQZJ' : Scan and Check Chain PASSED.
+programmer 'E203ASSQZJ' : device 'MPFS095T' : Executing action PROGRAM
+Programmer 'E203ASSQZJ' : JTAG TCK / SPI SCK frequency = 4 MHz
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT Algo_version[16] = 0002
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT IDCODE[32] = 0f8181cf
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT ISC_ENABLE_RESULT[32] = 00000000
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT CRCERR[1] = 0
+programmer 'E203ASSQZJ' : device 'MPFS095T' : Programming Mode: JTAG
+programmer 'E203ASSQZJ' : device 'MPFS095T' : Programming FPGA Array and sNVM...
+programmer 'E203ASSQZJ' : device 'MPFS095T' : Calculating component bitstream digests using programming file...
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT Fabric component bitstream digest[256] = c9199b7824a1a48e12a2a85e343997392a616157c9f92a2e773486f70a92fbae
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT sNVM component bitstream digest[256] = fb8994bd7d2ab270956f3257e634f776578f7fa6a4139c6d87f5a04034ec4acc
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT Entire bitstream digest[256] = 5e37508d65f10ecfbdbde19d14c2610fb66dde16e5907ffdff4d5b4f4b0c314a
+programmer 'E203ASSQZJ' : device 'MPFS095T' : Reading digests for all the segments from the device...
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT CHECK FABRIC digest[256] = fca4021752fa0623ab4ea194d07c7dc4ab5265c7596a682899c7ae6bc1c4b205
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT CC digest[256] = 26dd9b7f93a49ec4db5cd7e2ce41276f18fe021c3f1d016761942cebeb9ef5af
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT SNVM digest[256] = f37409a2f3c0041fc1e3b6d3d3803a88831b43452e3db22551f4adccb04092f6
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UL digest[256] = 6536ff1fd0a85bd3eda079923dd36fe296d55bfff4dd26b63b8b8209c2b4648d
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UKDIGEST0 digest[256] = 0000000000000000000000000000000000000000000000000000000000000000
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UKDIGEST1 digest[256] = 0000000000000000000000000000000000000000000000000000000000000000
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UKDIGEST2 digest[256] = d45264ac8021c51b0e1a01764b865b74ccf1bec3d20c40078063d19891aba92e
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UKDIGEST3 digest[256] = 4bfb5927a93198eae8f0d920233d00439b9709d36eef982730206ad142fda5f5
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UKDIGEST4 digest[256] = 0000000000000000000000000000000000000000000000000000000000000000
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UKDIGEST5 digest[256] = d45264ac8021c51b0e1a01764b865b74ccf1bec3d20c40078063d19891aba92e
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UKDIGEST6 digest[256] = 4bfb5927a93198eae8f0d920233d00439b9709d36eef982730206ad142fda5f5
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UPERM digest[256] = 49a5818c4fff9561dff202eddf5d7b9dca9189afe8e0c6eb76de64f6726abb93
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT SYS digest[256] = 4c460e7d1611c5460446999eb87f38aa6673b720b7a0e3b9641dac0a525fd784
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UKDIGEST7 digest[256] = 4bfb5927a93198eae8f0d920233d00439b9709d36eef982730206ad142fda5f5
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT ENVM digest[256] = 55b852781b9995a44c939b64e441ae2724b96f99c8f4fb9a141cfc9842c4b0e3
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UKDIGEST8 digest[256] = 0412eb154e1795ede2ed363d91583c9f28cc8df9f6d94c4854d0d8ea21635eec
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UKDIGEST9 digest[256] = 24e58e26abd4a4ca46516d4614f6f4dddb7e9a4fed9e8439e1d7e5b0b56caa17
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT UKDIGEST10 digest[256] = 4bfb5927a93198eae8f0d920233d00439b9709d36eef982730206ad142fda5f5
+programmer 'E203ASSQZJ' : device 'MPFS095T' : Please refer to System Services User Guide for more details about different digests.
+programmer 'E203ASSQZJ' : device 'MPFS095T' : ===================================================================================
+programmer 'E203ASSQZJ' : device 'MPFS095T' : EXPORT DSN[128] = 6646180cba578c73b3eb984f201a9204
+programmer 'E203ASSQZJ' : device 'MPFS095T' : ===================================================================================
+programmer 'E203ASSQZJ' : Finished: Thu Sep 24 18:01:39 2026 (Elapsed time 00:00:40)
+programmer 'E203ASSQZJ' : device 'MPFS095T' : Executing action PROGRAM PASSED.
+programmer 'E203ASSQZJ' : Chain programming PASSED.
+Chain Programming Finished: Thu Sep 24 18:01:39 2026 (Elapsed time 00:00:40)
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+Exported log file experiments/rq1_end_to_end/results/disco/program/fpx/PROGRAM.log.
+The 'save_log' command succeeded.
+Project closed.
+Exported log file experiments/rq1_end_to_end/results/disco/program/program.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

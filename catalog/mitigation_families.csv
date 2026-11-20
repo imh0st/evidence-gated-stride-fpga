@@ -1,0 +1,14 @@
+family,records
+Source and IP provenance review,SIP-1; SIP-2; SIP-3
+Simulation-evidence integrity and retention,SIM-1; SIM-2
+Constraint and configuration change control,CFG-1; CFG-3
+Reproducible transformation manifests,CFG-2; TRN-1
+Protected intermediate artifacts,TRN-2; TRN-3
+Tool/license/version provenance,TENV-1; TENV-2; TENV-3
+Signed and immutable reports,RPT-1; RPT-3
+Bitstream signing and key separation,BSD-1; BSD-2
+Target authentication with deployment logging,BSD-4
+Protected readback/status evidence,DEP-1
+Release-automation least privilege,REL-2
+Release-manifest attestation,RPT-2; REL-1
+"Separation of build, signing, release, and programming duties",BSD-3

@@ -1,0 +1,1 @@
+READBACK_COMPARE PASS words=1010808 readback_words=1010909 masked_bits=7447040 mismatched_bits=0 mask=placement method=UG470-6-method2

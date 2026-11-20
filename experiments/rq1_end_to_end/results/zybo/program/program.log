@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Sep 24 17:56:17 2026
+# Process ID         : 69168
+# Current directory  : experiments/rq1_end_to_end/results/zybo/program
+# Command line       : vivado.exe -mode batch -nojournal -log experiments\rq1_end_to_end\results\zybo\program\program.log -source flows\program\vivado.tcl -tclargs build/rq1/cdc_ref_zybo/cdc_ref.bit build/rq1/cdc_ref_zybo/cdc_ref.msk experiments/rq1_end_to_end/results/zybo/program/readback.rbd
+# Log file           : experiments/rq1_end_to_end/results/zybo/program/program.log
+# Journal file       : 
+# Running On         : root
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7700X 8-Core Processor             
+# CPU Frequency      : 4500 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 67517 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 71812 MB
+# Available Virtual  : 22234 MB
+#-----------------------------------------------------------
+source {flows\program\vivado.tcl}
+# lassign $argv bit msk rbd
+# open_hw_manager
+# connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2025.2
+  **** Build date : Oct 28 2025 at 10:03:13
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2025.2.0
+  ****** Build date   : Nov 14 2025-08:16:52
+    **** Build number : 2025.2.1763075812
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 548.328 ; gain = 3.953
+# open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351BA1D18A
+# set dev [lindex [get_hw_devices xc7z020*] 0]
+# current_hw_device $dev
+# puts "TARGET [current_hw_target]"
+TARGET localhost:3121/xilinx_tcf/Digilent/210351BA1D18A
+# puts "DEVICE [get_property PART $dev] IDCODE [get_property IDCODE $dev]"
+DEVICE xc7z020 IDCODE 00100011011100100111000010010011
+# if {$msk eq "-"} {
+#     create_hw_bitstream -hw_device $dev $bit
+# } else {
+#     create_hw_bitstream -hw_device $dev -mask $msk $bit
+# }
+# program_hw_devices $dev
+INFO: [Labtools 27-3164] End of startup status: HIGH
+# catch {puts "DONE_PIN [get_property REGISTER.CONFIG_STATUS.BIT14_DONE_PIN $dev]"}
+DONE_PIN 1
+# if {$msk eq "-"} {
+#     puts "VERIFY NOT_RUN: no mask file"
+# } else {
+#     verify_hw_devices $dev
+#     readback_hw_device -force -readback_file $rbd $dev
+# }
+INFO: [Labtools 27-3126] Verified device xc7z020 with bitfile build/rq1/cdc_ref_zybo/cdc_ref.bit and mask build/rq1/cdc_ref_zybo/cdc_ref.msk
+verify_hw_devices: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 903.270 ; gain = 351.590
+INFO: [Labtools 27-3158] Creating file: experiments\rq1_end_to_end\results\zybo\program\readback.rbd
+# close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210351BA1D18A
+# disconnect_hw_server
+# close_hw_manager
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 24 17:57:02 2026...

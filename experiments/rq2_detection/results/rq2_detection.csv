@@ -1,0 +1,93 @@
+board,case,expected,egaudit_verdict,egaudit_detected,other_records_worse,vendor_flags,note
+zybo,A1,CFG-1,VIOLATED,1,RPT-2,0,timing_met=True bitstream_changed=True
+zybo,A2,CFG-2,VIOLATED,1,,0,timing_met=True bitstream_changed=True
+zybo,A3,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True bitstream_changed=True
+zybo,A4,RPT-1,VIOLATED,1,,,
+zybo,A5,TENV-3,VIOLATED,1,,,
+zybo,A6,BSD-1,VIOLATED,1,RPT-2,,
+zybo,A7,BSD-4,VIOLATED,1,,,
+zybo,A8,DEP-1,VIOLATED,1,,0,verify=PASS
+zybo,A9,REL-1;BSD-3,MISSING;MISSING,1,,,
+zybo,N1,,,,,0,
+zybo,N2,,,,BSD-1;RPT-2,0,bitstream_file_identical=False
+zybo,N3,,,,,0,
+zybo,N4,,,,,0,files=3
+zybo,A10,SIP-1,VIOLATED,1,,0,
+zybo,A11,CFG-3,VIOLATED,1,CFG-1;RPT-2,1,timing_met=False
+zybo,A12,TRN-1;TRN-2;TRN-3,MISSING;MISSING;MISSING,1,,,deleted=3
+zybo,A13,REL-2,MISSING,1,RPT-2,,
+zybo,A14,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True configuration_changed=True
+zybo,A15,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True configuration_changed=True
+zybo,N5,,,,,,"rebuild=R14r; RQ1 release against N2, N2r1-N2r4: BSD-1 SATISFIED;SATISFIED;SATISFIED;SATISFIED;SATISFIED"
+zybo,A16,BSD-1,VIOLATED,1,,,restored=rom_init.mem
+zybo,A17,BSD-1,VIOLATED,1,,,configuration_changed=True
+zybo,A18,SIM-1,VIOLATED,1,,0,simulator=xsim result=PASS changed_from_project_baseline=SIM-1;SIM-2
+c10lp,A1,CFG-1,VIOLATED,1,RPT-2,0,timing_met=True bitstream_changed=False
+c10lp,A2,CFG-2,VIOLATED,1,,0,timing_met=True bitstream_changed=True
+c10lp,A3,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True bitstream_changed=True
+c10lp,A4,RPT-1,VIOLATED,1,,,
+c10lp,A5,TENV-3,VIOLATED,1,,,
+c10lp,A6,BSD-1,VIOLATED,1,RPT-2,,
+c10lp,A7,BSD-4,VIOLATED,1,,,
+c10lp,A8,DEP-1,VIOLATED,1,,0,verify=PASS
+c10lp,A9,REL-1;BSD-3,MISSING;MISSING,1,,,
+c10lp,N1,,,,,0,
+c10lp,N2,,,,,0,bitstream_file_identical=True
+c10lp,N3,,,,,0,
+c10lp,N4,,,,,0,files=2
+c10lp,A10,SIP-1,VIOLATED,1,RPT-2;SIP-2,0,
+c10lp,A11,CFG-3,VIOLATED,1,CFG-1;RPT-2,1,timing_met=False
+c10lp,A12,TRN-1;TRN-2;TRN-3,MISSING;MISSING;MISSING,1,,,deleted=3
+c10lp,A13,REL-2,MISSING,1,RPT-2,,
+c10lp,A14,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True configuration_changed=True
+c10lp,A15,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True configuration_changed=True
+c10lp,N5,,,,,,"rebuild=R14r; RQ1 release against N2, N2r1-N2r4: BSD-1 SATISFIED;SATISFIED;SATISFIED;SATISFIED;SATISFIED"
+c10lp,A16,BSD-1,VIOLATED,1,,,restored=rom_init.mem
+c10lp,A17,BSD-1,,,,,not run under Quartus
+c10lp,A18,SIM-1,VIOLATED,1,,0,simulator=questa result=PASS changed_from_project_baseline=SIM-1;SIM-2
+disco,A1,CFG-1,VIOLATED,1,RPT-2,0,timing_met=True bitstream_changed=True
+disco,A2,CFG-2,VIOLATED,1,,0,timing_met=True bitstream_changed=True
+disco,A3,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True bitstream_changed=True
+disco,A4,RPT-1,VIOLATED,1,,,
+disco,A5,TENV-3,VIOLATED,1,,,
+disco,A6,BSD-1,VIOLATED,1,RPT-2,,
+disco,A7,BSD-4,VIOLATED,1,,,
+disco,A8,DEP-1,VIOLATED,1,,0,verify=PASS
+disco,A9,REL-1;BSD-3,MISSING;MISSING,1,,,
+disco,N1,,,,,0,
+disco,N2,,,,BSD-1;RPT-2,0,bitstream_file_identical=False
+disco,N3,,,,,0,
+disco,N4,,,,,0,files=2
+disco,A10,SIP-1,VIOLATED,1,,0,
+disco,A11,CFG-3,VIOLATED,1,CFG-1;RPT-2,1,timing_met=False
+disco,A12,TRN-1;TRN-2;TRN-3,MISSING;MISSING;MISSING,1,,,deleted=4
+disco,A13,REL-2,MISSING,1,RPT-2,,
+disco,A14,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True configuration_changed=True
+disco,A15,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True configuration_changed=False
+disco,N5,,,,,,"rebuild=R14r; RQ1 release against N2, N2r1-N2r4: BSD-1 SATISFIED;SATISFIED;SATISFIED;SATISFIED;SATISFIED"
+disco,A16,BSD-1,VIOLATED,1,,,restored=rom_init.mem
+disco,A17,BSD-1,VIOLATED,1,,,configuration_changed=True
+disco,A18,SIM-1,VIOLATED,1,,0,simulator=questa_mchp result=PASS changed_from_project_baseline=SIM-1;SIM-2
+zybo_open,A1,CFG-1,VIOLATED,1,RPT-2,0,timing_met=True bitstream_changed=True
+zybo_open,A2,CFG-2,VIOLATED,1,,0,timing_met=True bitstream_changed=True
+zybo_open,A3,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True bitstream_changed=True
+zybo_open,A4,RPT-1,VIOLATED,1,,,
+zybo_open,A5,TENV-3,VIOLATED,1,,,
+zybo_open,A6,BSD-1,VIOLATED,1,RPT-2,,
+zybo_open,A7,BSD-4,VIOLATED,1,,,
+zybo_open,A8,DEP-1,VIOLATED,1,,0,verify=PASS
+zybo_open,A9,REL-1;BSD-3,MISSING;MISSING,1,,,
+zybo_open,N1,,,,,0,
+zybo_open,N2,,,,BSD-1;RPT-2,0,bitstream_file_identical=False
+zybo_open,N3,,,,,,not applicable: no standalone timing analysis
+zybo_open,N4,,,,,0,files=2
+zybo_open,A10,SIP-1,,,,,not applicable: no IP core in the flow
+zybo_open,A11,CFG-3,VIOLATED,1,CFG-1;RPT-2,1,timing_met=False
+zybo_open,A12,TRN-1;TRN-2;TRN-3,MISSING;MISSING;MISSING,1,CFG-3;RPT-1,,deleted=3
+zybo_open,A13,REL-2,MISSING,1,RPT-2,,
+zybo_open,A14,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True configuration_changed=True
+zybo_open,A15,SIP-2,VIOLATED,1,RPT-2,0,timing_met=True configuration_changed=True
+zybo_open,N5,,,,,,"rebuild=R14r; RQ1 release against N2, N2r1-N2r4: BSD-1 SATISFIED;SATISFIED;SATISFIED;SATISFIED;SATISFIED"
+zybo_open,A16,BSD-1,VIOLATED,1,,,restored=rom_init.mem
+zybo_open,A17,BSD-1,VIOLATED,1,,,configuration_changed=True
+zybo_open,A18,SIM-1,VIOLATED,1,,0,simulator=icarus result=PASS changed_from_project_baseline=SIM-1;SIM-2

@@ -1,0 +1,290 @@
+{
+  "design": "c10lp_multiproc",
+  "approved": {
+    "sources": {
+      "multiprocessor_tutorial_main_system.qsys": "1ecbfa62256c8889ffc4c4c64fde5539015a62d6aabb3715209e3487fa9c869e",
+      "philosopher_one.qsys": "7963740f83670ad51e9441f3b47487b75c1fecb5977b2bfa7c63a372a275b844",
+      "philosopher_two.qsys": "131e707b2bcd717981a156158ab14e286e1c729e87c746d91ee674d7a0aa0aa4",
+      "philosopher_zero.qsys": "ead4cdbaf1ffd1ab19368bbb20cf15cde4f830a12c2afd66348ed7f09d28bbc3",
+      "multiprocessor_tutorial_main_system.v": "207b5a8aa98d3446c9cdf928e69c557763f6e43637dc94362166722d47bc0c38",
+      "altera_reset_controller.v": "c3852ca01ccd3be14027b472660af730c0daf90e7a7fe0d6231491add912a0f4",
+      "altera_reset_synchronizer.v": "6235a3e2ad718d27b55af71f4728a04c6b08225c7bcaa96bcd59a3bf96e40f63",
+      "multiprocessor_tutorial_main_system_irq_mapper.sv": "705038f0d4056d71c1a956fc06bee6bd288f8b11d80bcbb6e34e6ae86d0e3c1d",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0.v": "1dd28167829d276d4b5b15edaf621cb0c3758f8cdc9e15920818262538f9b6f8",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_avalon_st_adapter.v": "b837e2004dfaa55b756c6335fc69824609dc4ec545502abd4ae64e76a1b2af3a",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv": "3dbbb306dc4d5a32194233499ee17a468d3d18110aaaf2fd307507bdd96f4de1",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_rsp_mux_007.sv": "d1c84ff604b1417d3f8aac83d2d5dbda842031419a7d1ad86dc79b1389baeaa8",
+      "altera_merlin_arbitrator.sv": "db27ef85a977025d1a90ef0f5aa1ff5d087578c71d8b5f4ff0abe24f16a7b79e",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_rsp_mux_002.sv": "488b1a207f51f914502e0aa3e68fb808e35d56832631644e63d9de50f2384a1a",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_rsp_mux.sv": "55e40425d6ef333a55ba6068367670100d5b1a14edaa2c981e831e13ba146213",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_rsp_demux_006.sv": "63796081f0dc9d09b4b91967ac2a732fa315d835a9d0bf79a3dfeb0959bfe56f",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_rsp_demux_003.sv": "169cc0ed98124a8b4db8aa555fd0d5210f22cdebddc0ddee20a69c314cc88438",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_rsp_demux_002.sv": "7c30012575319d1782c699e8717371a02934b14912744e51e082523badae45ca",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_rsp_demux_001.sv": "667eebdd39c5b675ca266110f81ac4d6b142701fca2a59b314ca5e738c29eb5c",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_rsp_demux.sv": "8d2f2781a3862b2e6c68e622c2e5b19cec3783e0e32fd82c80cb521f7d4c2752",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_cmd_mux_006.sv": "d4172da25544b2b676bbbc374fa03d1ea8c0c1fa562bee6fadc52c8a3cc12254",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_cmd_mux_003.sv": "05e6d8fd0b00cfdd08c5de2386fc2afa5c8d7155f40f731d25612becfe47c6b9",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_cmd_mux_002.sv": "ae83e73f27b0481854e1db483b9be06e2e4d7734e287d4c339b8278ae56d0fd8",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_cmd_mux_001.sv": "ef31a96ec364b16f7cdb805fd40468771669f4f7c3dd00fd9f188efc31226cf5",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_cmd_mux.sv": "38468f9082488999194fecd78297a787ff62eeb435b1df3a72abc687c00e8013",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_cmd_demux_007.sv": "a96e15b4d5e68a67a2d247c81ae9f09782c30aa6d7a56c8673bc0528b1d2beaf",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_cmd_demux_002.sv": "69ac5dc88ffd1d545a2b28ab51df23cd0faab4ec63d1c029c2d55aefc0f383e1",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_cmd_demux.sv": "f32757dd3ac0a29ed84622e94a66dec9928f7669578b81b4772c4a59c3303180",
+      "altera_merlin_traffic_limiter.sv": "c75b8c03dd0a1e1e3e9490283c58ddffda358c37580e43c8751b442c97adb50d",
+      "altera_avalon_sc_fifo.v": "b71ebd28aab28bd9393df54e92fada1d4b02d0c8817afca0d6d497871dcf8850",
+      "altera_avalon_st_pipeline_base.v": "5ab3e9f8e0c70f042b0fad5382f87c087c4f50135f57316d4d000927ba1fcd4c",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router_016.sv": "ed8092527e2f2f1e85e4896cef198d6c3d6fce5357b2536478d38263c47190c7",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router_015.sv": "999a7e10893aaed7a94d838c31819ccae08ae2283465faff37516072a41bd788",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router_014.sv": "e0bfdbb216d5db5bd9f608c8eed094f2415af447ca97bb404f7836e7a843f49e",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router_013.sv": "5f4728ba4b4b1ed80f81d33619abed5c2e3450a5e803251078365302c846443c",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router_012.sv": "42a400eddeb3272bc1f9a040622a65a289fc5e140a2510898cda34634ad063ac",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router_011.sv": "afe91afccdd0d28b498f66c1e0e2ca88d3493115b7308ec7cf6261c151fa2aaf",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router_010.sv": "6dfd5acbe7e40467c108fdb49b00691a7918ee36a5ffc129e4cce964627a775d",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router_009.sv": "d9dfb8f8066ec0ab813228bd63d3c24161100f3e814cdc020842bb9080c892e3",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router_008.sv": "f00b79ba4df9d1d4d701312fe601377d9ae6ce197a6c86eda1086983c9e62cff",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router_007.sv": "8ad8921326d63e652be8784d7480349c80ea93f7282e0fa879fe134259c7319a",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router_004.sv": "25f0646cbfbaeb9346771d7ce3564585b12d5bac8469d8ae370bd8446f082ba8",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router_002.sv": "b47936bf8ccf4e9bd5c4c0c9de4fe66fa88a6c2cefe1f785d6617b2395e641d1",
+      "multiprocessor_tutorial_main_system_mm_interconnect_0_router.sv": "693d46f707fbaea1f577522b84f3d4030832e05223cae19a874f64dd73bbc8f4",
+      "altera_merlin_slave_agent.sv": "7a44d0ed097e2dbe508697c04fc8e16244efa90ea89514fab1eaf04446e3cec2",
+      "altera_merlin_burst_uncompressor.sv": "c22a6d892f400390589cd55e8cdaa6b920e15066b8068854cb1d879a03563989",
+      "altera_merlin_master_agent.sv": "67777da5baf7a95c9efaf61a630c003bcae593900f598014ea36095c8116dbf3",
+      "altera_merlin_axi_master_ni.sv": "98e95ae2fc1e2392287faf9fa7bdb29d2607737a96a7b7989bbe813fb31c5d5e",
+      "altera_merlin_slave_translator.sv": "9d56cde9a91e4bd1eabf78d86295f0b53b728c3f89ca172ed4fc06259bb83ac1",
+      "altera_merlin_master_translator.sv": "d3f97733836f0ad20b72d45165a3651709634de6632c1b1654a81e4078a34dff",
+      "multiprocessor_tutorial_main_system_timer_top.v": "9b1ec36b2adaf6b826769a65800466ea2bb83567ef9663cf95deb86868baa931",
+      "multiprocessor_tutorial_main_system_sysid_qsys.v": "cb755b53482c639a4b9aa947b9664d58342915bfafb0669e58bee19dabe941cf",
+      "multiprocessor_tutorial_main_system_philosopher_zero.v": "c10bd4791c0d9a5699d6d503107105d04c3f6bd6858921f63aa598b5bb63bac4",
+      "multiprocessor_tutorial_main_system_philosopher_zero_mm_interconnect_0.v": "962b03d60f060329f8c4a1b0d5af707d4e72951f7b40ec5a2896e8e3966a66ff",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_rsp_mux_004.sv": "b94b14dc698270aa511bcadd24e7e4fe0836897da115d2d8572b5fbcf15047de",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_rsp_mux_002.sv": "b47d8095e6ad38b9a9e9b5592566862b6eb1d1b529ec45ef848a932bc0d5d147",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_rsp_mux.sv": "7ff1d571d984dfb9aaaff7cbadf570aae59e1676c2767e4f1910d3d0d3f92487",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_rsp_demux_004.sv": "cf01ab4a1c468934278ed4546041ef2c192b95d1d958d60ac214558e6680e9d1",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_rsp_demux_001.sv": "940776a29012e6fca0719952b17a03368d414e986e653f3b9bb8906d8131cd6d",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_rsp_demux.sv": "ef9813d9252667c0f55d4091047123c23d2595f5fd34443b33a0736ffa0f25ef",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_cmd_mux_004.sv": "c726ac17f846a8d3ed204e09eb0828657e0960faaaa7d1b07079cefa18dedcdf",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_cmd_mux_001.sv": "05f22027e0c626bdfe6730417907f63d02f1c8ef565d9419a779ed1a28968714",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_cmd_mux.sv": "4d1134d213c72a27582a5fa5f5ffc05e64f46e192b91473b4a9737c02be60022",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_cmd_demux_004.sv": "bb1bef92e3283f4418309af881bca7eef6333665eaef667482462d06a2e913a3",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_cmd_demux_002.sv": "70427426e66a484f9074f1bdde57d84c24ed6426c2b2cbb0b90dbbfb92d1d7c0",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_cmd_demux.sv": "3aedba1f5681de05f94c1fa67dbf124682cd2089b374988a982ab0b81041f825",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_router_009.sv": "00dfa6c9483323374d594f0f2397f313190afce160997830eb29ad1c04ce753f",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_router_006.sv": "d8a64215c5f6915145d8307858a210759868b80c17f71eb871a116d09d41f969",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_router_005.sv": "f4ddf0c080902537bd6d68298ef6d078051aab2ba06951d4eb7af90d28b1bbbe",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_router_004.sv": "1111fc8241f85d028b8262e2d766c0546bbabd6bd164ad4af496a240ec567cc2",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_router_002.sv": "06db52d5a7346d2560087c3ec9157a71f6834c2b1b6f50d290bc8fdc90019829",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0_router.sv": "f64ede369011d0235243c7e2e8a95e8170c0a92cdc3c590684b46b273be6ab2b",
+      "altera_avalon_jtag_uart.sv": "6233acc450b0b519ef782795dff0f3b591f4cfd96ffe7841be8665012cdf838d",
+      "altera_avalon_jtag_uart_scfifo_r.sv": "c7bbed844da9f5c96097bbed19dad5f712feb8dc2200a963df9ec158990f1d2d",
+      "altera_avalon_jtag_uart_scfifo_w.sv": "1b1597af12a32fc4b218b84c8600ce9a251d5f3ea28ee72771df75b40f91005f",
+      "altera_avalon_mm_bridge.v": "14e161f0c6b6d779561117e0ab18b5dfecf52dda7d5faec7738e7bc8f4312319",
+      "multiprocessor_tutorial_main_system_philosopher_zero_cpu_zero.v": "628752259ddf2c38785449e7fcc17805c903e301c478fc1de861033a87060457",
+      "multiprocessor_tutorial_main_system_cpu_top_irq_mapper.sv": "178be370c940967aecb5021ec7230cac2352c472c1134a65ec8987a9f5eb9ac2",
+      "csr_mlab.mif": "390b615c498234ac9b0fe0f389f379b24f3650b24287fc6634a730cf9dd1f4ac",
+      "debug_rom.mif": "3f47fa4b54de21d1d50e6497f81d7e1c3ca5913e9ecf86823099a2ed7f67a7a6",
+      "altera_std_synchronizer_nocut.v": "5659b750156fa5e45afd5915e865b64c35fc008a7471c7100b4c4ad57d994130",
+      "altera_avalon_st_clock_crosser.v": "478f12dadb61fa8a6689aaea20ab628f355fc4ebd8b0f0099a42cc6e01c8ef35",
+      "altera_avalon_st_handshake_clock_crosser.v": "ecf04371a4d34dee60065854127c82d849177f6dc1a79e238bd3d96e9a6a5e2d",
+      "multiprocessor_tutorial_main_system_philosopher_zero_cpu_zero_hart.sv": "f2c7fe7f3b5a8fadcac745173cd0a7f01de9c830e607a90919f5b31c8e2e0f18",
+      "multiprocessor_tutorial_main_system_philosopher_one_chopstick_mutex.v": "2a58a38544ed9e3723da905e72da9c4d16ec76e06eb9ca858cb429a79d62e8d0",
+      "multiprocessor_tutorial_main_system_philosopher_two.v": "52af153851e21bad2e85b7c438370fb6808ca5e1828b884e23b91abcd67c1188",
+      "multiprocessor_tutorial_main_system_philosopher_two_mm_interconnect_0.v": "a6f9ad8f4694cafbaf03583ae22039d8bc10ffc019fe67ba2ed97c850e31de7f",
+      "multiprocessor_tutorial_main_system_philosopher_two_cpu_two.v": "8a3753cc91d366fcdd9a67e484d880efe34813ea43de9721b036b6f30afeb24e",
+      "multiprocessor_tutorial_main_system_philosopher_two_cpu_two_hart.sv": "920476b251b0693da0d009f48fa9ab395e69d4bfe69702d082c5ee058139c619",
+      "multiprocessor_tutorial_main_system_philosopher_one.v": "5d39018af80a853f485573664c8986436e8784dabc6156596b3424f95c275504",
+      "multiprocessor_tutorial_main_system_philosopher_one_mm_interconnect_0.v": "01fa64e9eb995bfc8ea529d4937b8de90e26b4eae4ccdf563f55f7c480d69349",
+      "multiprocessor_tutorial_main_system_philosopher_one_cpu_one.v": "950584efb83b2fa54d47c24e27231d6c3bd5a5b26057a778965d6b3212f6295c",
+      "multiprocessor_tutorial_main_system_philosopher_one_cpu_one_hart.sv": "1bcb853680ff0401064d120659d7923437fbfd37a1abb28c727f954fbe522b71",
+      "multiprocessor_tutorial_main_system_onchip_memory.hex": "f5655649f804a5e53947c8245f010ab553b359b19867d5bcbcbf3da91fdb0db6",
+      "multiprocessor_tutorial_main_system_onchip_memory.v": "90b0a8a5a2288f16dddd7d997b1e225aade3e0e0bf7e83521d34cf452b93edd3",
+      "multiprocessor_tutorial_main_system_cpu_top.v": "0d4774c319d4c400dbd6dacb20b72c616954a9a8456c8616179e41601773806f",
+      "multiprocessor_tutorial_main_system_cpu_top_hart.sv": "9804232d0849caaaa462e3b564f386860399a96a84f446446881d5a276b03cbf",
+      "top_level.v": "a821fc4d72ff0b33b169cb309b590d2e8f5d25231990584677680eb8db31cea0",
+      "global_reset_generator.v": "5482c0d0a632b5394fb60ebea764a29ba07eb0cca80f3c9fa00a032aa061a3b6"
+    },
+    "constraints": {
+      "multiprocessor_tutorial.sdc": "173c50aea99273f83b3fb5f07bfdbea121b5a443363413a445eec453e23d360f",
+      "qsf:assignments": "6cbc4877ebed258b1be4cec3bbdeb13939c5540471f821325565105fc69a604f"
+    },
+    "ip": {
+      "multiprocessor_tutorial_main_system/clk": {
+        "vlnv": "altera:clock_source:25.1",
+        "sha256": "b05eac235994e8bb3331a41bff7e78ba30acce0ac1eddd7726318c643f4ce703",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/cpu_top": {
+        "vlnv": "altera:intel_niosv_m:26.0.0",
+        "sha256": "be55b2e8355784db26d1e8668d13603fa52fbf2642792f83303727161f2f97e8",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/jtag_uart_top": {
+        "vlnv": "altera:altera_avalon_jtag_uart:25.1",
+        "sha256": "69157e97f7f56249eea47b1145e26f11fbab617e97031c0a57f0288c4d36cc01",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/onchip_memory": {
+        "vlnv": "altera:altera_avalon_onchip_memory2:25.1",
+        "sha256": "84ee8c9839079c44646d4abc8726b22c98ab2a4f23959d18e1102197a098784a",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_one/chopstick_mutex": {
+        "vlnv": "altera:altera_avalon_mutex:25.1",
+        "sha256": "0d315e7e7952de56e55f0d9381977806ab4229f58b40935c9fc4ba3e2d12f86e",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_one/clk": {
+        "vlnv": "altera:clock_source:25.1",
+        "sha256": "b05eac235994e8bb3331a41bff7e78ba30acce0ac1eddd7726318c643f4ce703",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_one/cpu_one": {
+        "vlnv": "altera:intel_niosv_m:26.0.0",
+        "sha256": "85f285dec67e757880f5b84d98f2277da33ff1158ae5a368a1e357658c6cd7fb",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_one/in_philo_bridge": {
+        "vlnv": "altera:altera_avalon_mm_bridge:25.1",
+        "sha256": "82b8d823770c8b182b809e4dabe54361f580e204676c86c1ef851f4c3b61a743",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_one/jtag_uart": {
+        "vlnv": "altera:altera_avalon_jtag_uart:25.1",
+        "sha256": "69157e97f7f56249eea47b1145e26f11fbab617e97031c0a57f0288c4d36cc01",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_one/out_philo_bridge": {
+        "vlnv": "altera:altera_avalon_mm_bridge:25.1",
+        "sha256": "75934fe3af7ea2bd84b58082d6b1af653889205c1409d25872523f4c51a2c892",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_one/out_system_bridge": {
+        "vlnv": "altera:altera_avalon_mm_bridge:25.1",
+        "sha256": "34e370c95fe896bfe2d904f2359789d5a5003886864e16b7db49d48537e1f02d",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_one/timer": {
+        "vlnv": "altera:altera_avalon_timer:25.1",
+        "sha256": "3e7ec3de6b2dccad5a07b411ce3fc7380db9f6b947a817e0e3ee3a43b09a1773",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_two/chopstick_mutex": {
+        "vlnv": "altera:altera_avalon_mutex:25.1",
+        "sha256": "0d315e7e7952de56e55f0d9381977806ab4229f58b40935c9fc4ba3e2d12f86e",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_two/clk": {
+        "vlnv": "altera:clock_source:25.1",
+        "sha256": "b05eac235994e8bb3331a41bff7e78ba30acce0ac1eddd7726318c643f4ce703",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_two/cpu_two": {
+        "vlnv": "altera:intel_niosv_m:26.0.0",
+        "sha256": "22e6e5bcff861e0e64ad92bdc3dee5aa2f52d494c79a31f2506887a1487fb0dd",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_two/in_philo_bridge": {
+        "vlnv": "altera:altera_avalon_mm_bridge:25.1",
+        "sha256": "82b8d823770c8b182b809e4dabe54361f580e204676c86c1ef851f4c3b61a743",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_two/jtag_uart": {
+        "vlnv": "altera:altera_avalon_jtag_uart:25.1",
+        "sha256": "69157e97f7f56249eea47b1145e26f11fbab617e97031c0a57f0288c4d36cc01",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_two/out_philo_bridge": {
+        "vlnv": "altera:altera_avalon_mm_bridge:25.1",
+        "sha256": "75934fe3af7ea2bd84b58082d6b1af653889205c1409d25872523f4c51a2c892",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_two/out_system_bridge": {
+        "vlnv": "altera:altera_avalon_mm_bridge:25.1",
+        "sha256": "34e370c95fe896bfe2d904f2359789d5a5003886864e16b7db49d48537e1f02d",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_two/timer": {
+        "vlnv": "altera:altera_avalon_timer:25.1",
+        "sha256": "3e7ec3de6b2dccad5a07b411ce3fc7380db9f6b947a817e0e3ee3a43b09a1773",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_zero/chopstick_mutex": {
+        "vlnv": "altera:altera_avalon_mutex:25.1",
+        "sha256": "0d315e7e7952de56e55f0d9381977806ab4229f58b40935c9fc4ba3e2d12f86e",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_zero/clk": {
+        "vlnv": "altera:clock_source:25.1",
+        "sha256": "b05eac235994e8bb3331a41bff7e78ba30acce0ac1eddd7726318c643f4ce703",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_zero/cpu_zero": {
+        "vlnv": "altera:intel_niosv_m:26.0.0",
+        "sha256": "05364fec145b633d847878c6ca06c18fffca5d96df764b94c02663621e9f681e",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_zero/in_philo_bridge": {
+        "vlnv": "altera:altera_avalon_mm_bridge:25.1",
+        "sha256": "82b8d823770c8b182b809e4dabe54361f580e204676c86c1ef851f4c3b61a743",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_zero/jtag_uart": {
+        "vlnv": "altera:altera_avalon_jtag_uart:25.1",
+        "sha256": "69157e97f7f56249eea47b1145e26f11fbab617e97031c0a57f0288c4d36cc01",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_zero/out_philo_bridge": {
+        "vlnv": "altera:altera_avalon_mm_bridge:25.1",
+        "sha256": "75934fe3af7ea2bd84b58082d6b1af653889205c1409d25872523f4c51a2c892",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_zero/out_system_bridge": {
+        "vlnv": "altera:altera_avalon_mm_bridge:25.1",
+        "sha256": "34e370c95fe896bfe2d904f2359789d5a5003886864e16b7db49d48537e1f02d",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/philosopher_zero/timer": {
+        "vlnv": "altera:altera_avalon_timer:25.1",
+        "sha256": "3e7ec3de6b2dccad5a07b411ce3fc7380db9f6b947a817e0e3ee3a43b09a1773",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/sysid_qsys": {
+        "vlnv": "altera:altera_avalon_sysid_qsys:25.1",
+        "sha256": "66e4475387dcb5175ec5daf59b7acfa490bc392f233fcf6fa696a242cf90fe5b",
+        "provider": "fpga-vendor"
+      },
+      "multiprocessor_tutorial_main_system/timer_top": {
+        "vlnv": "altera:altera_avalon_timer:25.1",
+        "sha256": "3e7ec3de6b2dccad5a07b411ce3fc7380db9f6b947a817e0e3ee3a43b09a1773",
+        "provider": "fpga-vendor"
+      }
+    },
+    "options_digest": "2072fb9fb02ecdf065c19779bb669e6726dec57db409111f82bc1ed0b770b9ef",
+    "reviewer": "design-reviewer"
+  },
+  "tool": {
+    "vendor": "Altera Quartus Prime",
+    "version": "25.1std.0 Build 1129"
+  },
+  "reports": {
+    "timing": "8a6825e55e1619eba9d1b49f449712e6c618b1e9ff3e145f66b377ae6a2ccb01"
+  },
+  "bitstream": {
+    "file": "top_level.jic",
+    "sha256": "17691e73c15027de007063767995b5de5b5d270dd23814c996b9763463d101d7"
+  },
+  "signature": {
+    "signer": "release-signer",
+    "approved_by": "release-approver"
+  },
+  "release": {
+    "id": "c10lp_multiproc",
+    "approver": "release-approver",
+    "workflow": "experiments/public_designs/run.py",
+    "service_account": "svc-release"
+  },
+  "target": {
+    "device": "10CL025YU256I7G",
+    "idcode": "020F30DD",
+    "serial": null
+  }
+}

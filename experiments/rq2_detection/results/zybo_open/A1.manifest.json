@@ -1,0 +1,45 @@
+{
+  "design": "cdc_ref_zybo_open",
+  "approved": {
+    "sources": {
+      "async_fifo.v": "34758d7b0b7771d8bf23dae727229bbb3cb7e32fa23a829a8873bab3bba63421",
+      "board_top.v": "791be515a61dab326fa8bd4a375807bc8c230e4cb8448cc8a442908f089949cd",
+      "cdc_ref_core.v": "0e79201b4e0e2e9a05581a155292e16a40b3915a48b08a3ed542c07e03b12249",
+      "reset_sync.v": "5a4ed8513a8cb9af2edf8f7261e90e011d2eee2e1f5d167e5fe4424ec906dbef",
+      "clk_gen.v": "139dd98402685579e94fb5658a5827ecdf607ffa6f7cfe0dc9940cd239fe8fd6"
+    },
+    "constraints": {
+      "pins.xdc": "d64bbde75aeba716bf0900c049d6991a14123f8199d4ca1b885d82bb1c3fcf5f",
+      "cdc.xdc": "4892ab88f49e62f1af392393d684585a8c7b6283b488fdb870160cda15f31c6d"
+    },
+    "ip": {},
+    "options_digest": "e48e84947816ab9613bff79ea716e90f925dcac14ec433577c912f4f09eb3635",
+    "reviewer": "design-reviewer"
+  },
+  "tool": {
+    "vendor": "openXC7 (Yosys, nextpnr-xilinx)",
+    "version": "Yosys 0.63+173; nextpnr-xilinx a9ceeec"
+  },
+  "reports": {
+    "timing": "f6e61377e2eb257b635d6e383ab236690ee57553815045e84c62b73a400c14e2"
+  },
+  "bitstream": {
+    "file": "cdc_ref.bit",
+    "sha256": "d300dd03d2311c257b70d6afa5fbbf95838d269049f970f79ebbcf3160326844"
+  },
+  "signature": {
+    "signer": "release-signer",
+    "approved_by": "release-approver"
+  },
+  "release": {
+    "id": "cdc_ref_zybo_open",
+    "approver": "release-approver",
+    "workflow": "experiments/rq1_end_to_end/run.py",
+    "service_account": "svc-release"
+  },
+  "target": {
+    "device": "xc7z020clg400-1",
+    "idcode": "23727093",
+    "serial": null
+  }
+}
